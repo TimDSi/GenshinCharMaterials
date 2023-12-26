@@ -20,15 +20,20 @@ function generateRessourceQuantity(ressource, quantity) {
 
 
 function generateRequiredMaterials(character) {
-    let charIndex = getCharacterMaterialIndex(character.name);
     let materialsRequired = document.createElement("ul");
     materialsRequired.setAttribute("class", "materialsRequired");
+    let materialIndex = getCharacterMaterialIndex(character.name);
+
 
     const requirements = new Map();
 
     for (let j = 0; j < 3; j++) {
         let currentTalentLevel = character.talents[j];
-        while (currentTalentLevel < character.talentObjectives[j]) {
+        let targetValue = 9;
+        if (j == 0 && charactersMaterials[materialIndex].type != "DPS") {
+            targetValue = 6;
+        }
+        while (currentTalentLevel < targetValue) {
             currentTalentLevel++;
             const thisTalentMaterials = generateMaterialsForTalentLevel(character.name, currentTalentLevel);
             for (const [key, value] of thisTalentMaterials.entries()) {
@@ -64,9 +69,15 @@ function main() {
     let box = document.getElementById("Box");
     let sortedCharacters = generateSortedCharacter();
     for (let index in sortedCharacters) {
-        let character = sortedCharacters[index];
-        let ownIndex = getMyCharacterIndex(character);
-        let materialIndex = getCharacterMaterialIndex(character);
+        let characterName = sortedCharacters[index];
+        let ownIndex = getMyCharacterIndex(characterName);
+        let character;
+        if (ownIndex != -1) {
+            character = myCharacter[ownIndex];
+        } else {
+            character = new Character(characterName, 1, [1, 1, 1]);
+        }
+        let materialIndex = getCharacterMaterialIndex(characterName);
         let div = document.createElement("div");
         div.setAttribute("class", "character");
 
@@ -76,12 +87,12 @@ function main() {
 
             // name
             let name = document.createElement("h1");
-            name.innerHTML = character;
+            name.innerHTML = characterName;
             presentation.appendChild(name);
 
             // image
             let image = document.createElement("img");
-            image.src = "./" + character.replace(/\s/g, '') + ".png";
+            image.src = "./" + characterName.replace(/\s/g, '') + ".png";
             image.setAttribute("class", "characterImage");
             presentation.appendChild(image);
 
@@ -93,11 +104,7 @@ function main() {
 
             // level
             let level = document.createElement("th");
-            if (ownIndex != -1) {
-                level.innerHTML = "Level " + myCharacter[ownIndex].level;
-            } else {
-                level.innerHTML = "Level " +1;
-            }
+            level.innerHTML = "Level " + character.level;
             currentStats.appendChild(level);
 
             //talents
@@ -112,16 +119,17 @@ function main() {
 
                     // level
                     let talentLevel = document.createElement("td");
-                    let str;
-                    if (ownIndex != -1) {
-                        str = myCharacter[ownIndex].talents[j];
-                    } else {
-                        str = 1;
+                    let str = character.talents[j];
+
+                    // objective
+                    let targetValue = 9;
+                    if (j == 0 && charactersMaterials[materialIndex].type != "DPS") {
+                        targetValue = 6;
                     }
-                    if (ownIndex != -1) {
-                        if (str < myCharacter[ownIndex].talentObjectives[j]) {
-                            str += " ==> " + myCharacter[ownIndex].talentObjectives[j];
-                        }
+
+                    // to do
+                    if (str < targetValue) {
+                        str += " ==> " + targetValue;
                     }
                     talentLevel.innerHTML = str;
                     talentContainer.appendChild(talentLevel);
@@ -132,7 +140,7 @@ function main() {
         div.appendChild(currentStats);
 
         // materials required
-        let materialsRequired = generateRequiredMaterials(myCharacter[ownIndex]);
+        let materialsRequired = generateRequiredMaterials(character);
         div.appendChild(materialsRequired);
 
         box.appendChild(div);
