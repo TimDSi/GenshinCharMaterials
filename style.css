@@ -1,0 +1,43 @@
+﻿body
+{
+}
+
+.character {
+    outline: solid black 1px;
+    width: 100%;
+    display: flex;
+}
+
+.character > .presentation {
+    width: 25%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation > image {
+    flex: 1;
+}
+
+.presentation > h1 {
+    flex: 1;
+    text-align: center;
+}
+
+.character > .characterStats {
+    flex: 1;
+    text-align: center;
+}
+
+.character > .materialsRequired {
+    flex: 2;
+}
+
+.material {
+    height: 3em;
+    display: flex;
+}
+
+.material > img {
+    height: 100%;
+}

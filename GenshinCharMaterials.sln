@@ -1,0 +1,418 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{E959C94B-CD20-426E-ABA5-B4F55D46FF86}"
+	ProjectSection(SolutionItems) = preProject
+		Character.js = Character.js
+		CharacterMaterials.js = CharacterMaterials.js
+		main.html = main.html
+		Material.js = Material.js
+		myCharacter.js = myCharacter.js
+		Script1.js = Script1.js
+		style.css = style.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{DA7D878C-CEB6-4BC0-ACE9-B270C5205151}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "characterImages", "characterImages", "{8ED10617-27BA-4CA2-A46F-257C37207365}"
+	ProjectSection(SolutionItems) = preProject
+		Albedo.png = Albedo.png
+		Alhaitham.png = Alhaitham.png
+		Amber.png = Amber.png
+		AratakiItto.png = AratakiItto.png
+		Baizhu.png = Baizhu.png
+		Barbara.png = Barbara.png
+		Beidou.png = Beidou.png
+		Bennett.png = Bennett.png
+		Candace.png = Candace.png
+		Charlotte.png = Charlotte.png
+		Chongyun.png = Chongyun.png
+		Collei.png = Collei.png
+		Cyno.png = Cyno.png
+		Dehya.png = Dehya.png
+		Diluc.png = Diluc.png
+		Diona.png = Diona.png
+		Dori.png = Dori.png
+		Eula.png = Eula.png
+		Faruzan.png = Faruzan.png
+		Fischl.png = Fischl.png
+		Freminet.png = Freminet.png
+		Furina.png = Furina.png
+		Ganyu.png = Ganyu.png
+		Gorou.png = Gorou.png
+		HuTao.png = HuTao.png
+		Jean.png = Jean.png
+		KaedeharaKazuha.png = KaedeharaKazuha.png
+		Kaeya.png = Kaeya.png
+		KamisatoAyaka.png = KamisatoAyaka.png
+		KamisatoAyato.png = KamisatoAyato.png
+		Kaveh.png = Kaveh.png
+		Keqing.png = Keqing.png
+		Kirara.png = Kirara.png
+		Klee.png = Klee.png
+		KujouSara.png = KujouSara.png
+		KukiShinobu.png = KukiShinobu.png
+		Layla.png = Layla.png
+		Lisa.png = Lisa.png
+		Lynette.png = Lynette.png
+		Lyney.png = Lyney.png
+		Mika.png = Mika.png
+		Mona.png = Mona.png
+		Nahida.png = Nahida.png
+		Neuvillette.png = Neuvillette.png
+		Nilou.png = Nilou.png
+		Ningguang.png = Ningguang.png
+		Noelle.png = Noelle.png
+		Qiqi.png = Qiqi.png
+		RaidenShogun.png = RaidenShogun.png
+		Razor.png = Razor.png
+		Rosaria.png = Rosaria.png
+		SangonomiyaKokomi.png = SangonomiyaKokomi.png
+		Sayu.png = Sayu.png
+		Shenhe.png = Shenhe.png
+		ShikanoinHeizou.png = ShikanoinHeizou.png
+		Sucrose.png = Sucrose.png
+		Tartaglia.png = Tartaglia.png
+		Thoma.png = Thoma.png
+		Tighnari.png = Tighnari.png
+		Venti.png = Venti.png
+		Wanderer.png = Wanderer.png
+		Wriothesley.png = Wriothesley.png
+		Xiangling.png = Xiangling.png
+		Xiao.png = Xiao.png
+		Xingqiu.png = Xingqiu.png
+		Xinyan.png = Xinyan.png
+		YaeMiko.png = YaeMiko.png
+		Yanfei.png = Yanfei.png
+		Yaoyao.png = Yaoyao.png
+		Yelan.png = Yelan.png
+		Yoimiya.png = Yoimiya.png
+		YunJin.png = YunJin.png
+		Zhongli.png = Zhongli.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ressources", "Ressources", "{0C7D3115-0BA0-4CA5-892C-74DDCC5A9532}"
+	ProjectSection(SolutionItems) = preProject
+		Mora.png = Mora.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enemies", "Enemies", "{792FBEA8-5633-406B-880D-EFAAE441D922}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Whopperflowers", "Whopperflowers", "{BDFAE4C2-33C4-4EFD-AD0A-9BFE7E412E7A}"
+	ProjectSection(SolutionItems) = preProject
+		EnergyNectar.png = EnergyNectar.png
+		ShimmeringNectar.png = ShimmeringNectar.png
+		WhopperflowerNectar.png = WhopperflowerNectar.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HilichurlShooters", "HilichurlShooters", "{AEF17BB1-2A22-428C-AB3E-E3C49246B498}"
+	ProjectSection(SolutionItems) = preProject
+		FirmArrowhead.png = FirmArrowhead.png
+		SharpArrowhead.png = SharpArrowhead.png
+		WeatheredArrowhead.png = WeatheredArrowhead.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TalentMaterials", "TalentMaterials", "{2392A01B-7AE1-48C7-86F2-E29F1A7C920E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Freedom", "Freedom", "{72A24CBB-A2CB-4745-AA9A-6DC346092A59}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoFreedom.png = GuidetoFreedom.png
+		PhilosophiesofFreedom.png = PhilosophiesofFreedom.png
+		TeachingsofFreedom.png = TeachingsofFreedom.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Slimes", "Slimes", "{5FBA0E34-BA6F-46EE-A3AB-63DD31371EE7}"
+	ProjectSection(SolutionItems) = preProject
+		SlimeConcentrate.png = SlimeConcentrate.png
+		SlimeCondensate.png = SlimeCondensate.png
+		SlimeSecretions.png = SlimeSecretions.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hilichurls", "Hilichurls", "{47F8C778-0338-4386-8788-058621534CA5}"
+	ProjectSection(SolutionItems) = preProject
+		DamagedMask.png = DamagedMask.png
+		OminousMask.png = OminousMask.png
+		StainedMask.png = StainedMask.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samachurls", "Samachurls", "{7813E018-EAE3-49F4-BFB1-EC52765B4F47}"
+	ProjectSection(SolutionItems) = preProject
+		DiviningScroll.png = DiviningScroll.png
+		ForbiddenCurseScroll.png = ForbiddenCurseScroll.png
+		SealedScroll.png = SealedScroll.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fatui", "Fatui", "{5785FC7D-BB95-4E96-BC48-86CCE674F66E}"
+	ProjectSection(SolutionItems) = preProject
+		OfficersInsignia.png = OfficersInsignia.png
+		RecruitsInsignia.png = RecruitsInsignia.png
+		SergeantsInsignia.png = SergeantsInsignia.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TreasureHoarders", "TreasureHoarders", "{DABFD94C-68F7-4525-8A74-098F408D3DA7}"
+	ProjectSection(SolutionItems) = preProject
+		GoldenRavenInsignia.png = GoldenRavenInsignia.png
+		SilverRavenInsignia.png = SilverRavenInsignia.png
+		TreasureHoarderInsignia.png = TreasureHoarderInsignia.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diligence", "Diligence", "{9F664CF5-7202-41B3-ACBA-719B583BFD14}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoDiligence.png = GuidetoDiligence.png
+		PhilosophiesofDiligence.png = PhilosophiesofDiligence.png
+		TeachingsofDiligence.png = TeachingsofDiligence.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prosperity", "Prosperity", "{D818980D-778D-4102-B28F-BC48786B6637}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoProsperity.png = GuidetoProsperity.png
+		PhilosophiesofProsperity.png = PhilosophiesofProsperity.png
+		TeachingsofProsperity.png = TeachingsofProsperity.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resistance", "Resistance", "{C393977B-2CCB-41B4-BBED-E9EF2584CA73}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoResistance.png = GuidetoResistance.png
+		PhilosophiesofResistance.png = PhilosophiesofResistance.png
+		TeachingsofResistance.png = TeachingsofResistance.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nobushi", "Nobushi", "{10EEDDFA-CCA7-4E7F-A620-F24973DD7FE2}"
+	ProjectSection(SolutionItems) = preProject
+		FamedHandguard.png = FamedHandguard.png
+		KageuchiHandguard.png = KageuchiHandguard.png
+		OldHandguard.png = OldHandguard.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specter", "Specter", "{706BF22A-01FD-4AA8-B673-D47DF085D22E}"
+	ProjectSection(SolutionItems) = preProject
+		SpectralHeart.png = SpectralHeart.png
+		SpectralHusk.png = SpectralHusk.png
+		SpectralNucleus.png = SpectralNucleus.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fungus", "Fungus", "{92258D19-B7D6-4095-9F0A-CE679CDFC33F}"
+	ProjectSection(SolutionItems) = preProject
+		CrystallineCrystDust.png = CrystallineCrystDust.png
+		FungalSpores.png = FungalSpores.png
+		LuminescentPollen.png = LuminescentPollen.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Eremites", "Eremites", "{1C72A7C4-481B-4EFE-83F0-F9F1ECEF7E34}"
+	ProjectSection(SolutionItems) = preProject
+		FadedRedSatin.png = FadedRedSatin.png
+		RichRedBrocade.png = RichRedBrocade.png
+		TrimmedRedSilk.png = TrimmedRedSilk.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FontemerAberrants", "FontemerAberrants", "{BA14CF82-D59D-4236-A01A-6B34F30C627D}"
+	ProjectSection(SolutionItems) = preProject
+		TransoceanicChunk.png = TransoceanicChunk.png
+		TransoceanicPearl.png = TransoceanicPearl.png
+		XenochromaticCrystal.png = XenochromaticCrystal.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClockworkMeka", "ClockworkMeka", "{090ACC92-84AB-4856-A3E9-1CF189E3306D}"
+	ProjectSection(SolutionItems) = preProject
+		ArtificedDynamicGear.png = ArtificedDynamicGear.png
+		MeshingGear.png = MeshingGear.png
+		SpurGear.png = SpurGear.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ballad", "Ballad", "{2FA78D5A-6259-4454-A4F9-9B302CF9A845}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoBallad.png = GuidetoBallad.png
+		PhilosophiesofBallad.png = PhilosophiesofBallad.png
+		TeachingsofBallad.png = TeachingsofBallad.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gold", "Gold", "{DA443F83-3C5A-440A-B2A4-F7B8C2D5D6AD}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoGold.png = GuidetoGold.png
+		PhilosophiesofGold.png = PhilosophiesofGold.png
+		TeachingsofGold.png = TeachingsofGold.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admonition", "Admonition", "{9F24ABFD-39F1-4771-BF4C-1AE26937098A}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoAdmonition.png = GuidetoAdmonition.png
+		PhilosophiesofAdmonition.png = PhilosophiesofAdmonition.png
+		TeachingsofAdmonition.png = TeachingsofAdmonition.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ingenuity", "Ingenuity", "{5247667B-4FEC-48C3-945A-9C4BE7BF1F5B}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoIngenuity.png = GuidetoIngenuity.png
+		PhilosophiesofIngenuity.png = PhilosophiesofIngenuity.png
+		TeachingsofIngenuity.png = TeachingsofIngenuity.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Praxis", "Praxis", "{C4F478AF-5F4E-4073-BE07-0EDC3BBF7DAF}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoPraxis.png = GuidetoPraxis.png
+		PhilosophiesofPraxis.png = PhilosophiesofPraxis.png
+		TeachingsofPraxis.png = TeachingsofPraxis.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transience", "Transience", "{2F1A5D6F-8CD7-42BC-8583-8336C8BA6D16}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoTransience.png = GuidetoTransience.png
+		PhilosophiesofTransience.png = PhilosophiesofTransience.png
+		TeachingsofTransience.png = TeachingsofTransience.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elegance", "Elegance", "{873C00C1-1D9B-4557-A1F2-D0037272724B}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoElegance.png = GuidetoElegance.png
+		PhilosophiesofElegance.png = PhilosophiesofElegance.png
+		TeachingsofElegance.png = TeachingsofElegance.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Light", "Light", "{7B56F58B-B1F4-476F-96D0-DE241F171A58}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoLight.png = GuidetoLight.png
+		PhilosophiesofLight.png = PhilosophiesofLight.png
+		TeachingsofLight.png = TeachingsofLight.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Equity", "Equity", "{B044CE1D-7502-4153-B2EB-9096D4B6F5FB}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoEquity.png = GuidetoEquity.png
+		PhilosophiesofEquity.png = PhilosophiesofEquity.png
+		TeachingsofEquity.png = TeachingsofEquity.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Justice", "Justice", "{140D83CE-7634-4BE5-8A7B-9DFEDFF92C90}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoJustice.png = GuidetoJustice.png
+		PhilosophiesofJustice.png = PhilosophiesofJustice.png
+		TeachingsofJustice.png = TeachingsofJustice.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{0D9683EA-F8B7-47A8-B687-CD15DB99A4FA}"
+	ProjectSection(SolutionItems) = preProject
+		GuidetoOrder.png = GuidetoOrder.png
+		PhilosophiesofOrder.png = PhilosophiesofOrder.png
+		TeachingsofOrder.png = TeachingsofOrder.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeeklyBoss", "WeeklyBoss", "{12D5556C-C944-4F1F-AF41-DFDB7313E63B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dvalin", "Dvalin", "{7443DDFA-681A-4147-9DAC-10FEC6B6CEDB}"
+	ProjectSection(SolutionItems) = preProject
+		DvalinsClaw.png = DvalinsClaw.png
+		DvalinsPlume.png = DvalinsPlume.png
+		DvalinsSigh.png = DvalinsSigh.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Andrius", "Andrius", "{2E2BDB56-6183-4627-8E2D-C3F2C7D8F19E}"
+	ProjectSection(SolutionItems) = preProject
+		RingofBoreas.png = RingofBoreas.png
+		SpiritLocketofBoreas.png = SpiritLocketofBoreas.png
+		TailofBoreas.png = TailofBoreas.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Childe", "Childe", "{CA006E8F-BD2D-478A-BCC2-4207BE638725}"
+	ProjectSection(SolutionItems) = preProject
+		ShadowoftheWarrior.png = ShadowoftheWarrior.png
+		TuskofMonocerosCaeli.png = TuskofMonocerosCaeli.png
+		ShardofaFoulLegacy.png = ShardofaFoulLegacy.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azhdaha", "Azhdaha", "{AB020B25-95DB-4C6B-B9FA-5E10A25F6B90}"
+	ProjectSection(SolutionItems) = preProject
+		BloodjadeBranch.png = BloodjadeBranch.png
+		DragonLordsCrown.png = DragonLordsCrown.png
+		GildedScale.png = GildedScale.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LaSignora", "LaSignora", "{E2208B71-66E6-45FF-8CC8-329428B2C846}"
+	ProjectSection(SolutionItems) = preProject
+		AshenHeart.png = AshenHeart.png
+		HellfireButterfly.png = HellfireButterfly.png
+		MoltenMoment.png = MoltenMoment.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Raiden", "Raiden", "{9D617457-8423-479E-A5A1-83BC383AF15B}"
+	ProjectSection(SolutionItems) = preProject
+		MudraoftheMaleficGeneral.png = MudraoftheMaleficGeneral.png
+		TearsoftheCalamitousGod.png = TearsoftheCalamitousGod.png
+		TheMeaningofAeons.png = TheMeaningofAeons.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scaramuccia", "Scaramuccia", "{24520D4C-4B06-4D91-BC47-45942A8F5A51}"
+	ProjectSection(SolutionItems) = preProject
+		DakasBell.png = DakasBell.png
+		MirrorofMushin.png = MirrorofMushin.png
+		PuppetStrings.png = PuppetStrings.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GuardianofApepsOasis", "GuardianofApepsOasis", "{2BF0C47B-4E7E-4BA1-B5AF-0112D835977E}"
+	ProjectSection(SolutionItems) = preProject
+		Everamber.png = Everamber.png
+		PrimordialGreenbloom.png = PrimordialGreenbloom.png
+		WorldspanFern.png = WorldspanFern.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllDevouringNarwhal", "AllDevouringNarwhal", "{9059D7A6-7D7D-4ECA-9F21-866701FBEA1F}"
+	ProjectSection(SolutionItems) = preProject
+		LightlessEyeoftheMaelstrom.png = LightlessEyeoftheMaelstrom.png
+		LightlessMass.png = LightlessMass.png
+		LightlessSilkString.png = LightlessSilkString.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA7D878C-CEB6-4BC0-ACE9-B270C5205151} = {E959C94B-CD20-426E-ABA5-B4F55D46FF86}
+		{8ED10617-27BA-4CA2-A46F-257C37207365} = {DA7D878C-CEB6-4BC0-ACE9-B270C5205151}
+		{0C7D3115-0BA0-4CA5-892C-74DDCC5A9532} = {DA7D878C-CEB6-4BC0-ACE9-B270C5205151}
+		{792FBEA8-5633-406B-880D-EFAAE441D922} = {0C7D3115-0BA0-4CA5-892C-74DDCC5A9532}
+		{BDFAE4C2-33C4-4EFD-AD0A-9BFE7E412E7A} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{AEF17BB1-2A22-428C-AB3E-E3C49246B498} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{2392A01B-7AE1-48C7-86F2-E29F1A7C920E} = {0C7D3115-0BA0-4CA5-892C-74DDCC5A9532}
+		{72A24CBB-A2CB-4745-AA9A-6DC346092A59} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{5FBA0E34-BA6F-46EE-A3AB-63DD31371EE7} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{47F8C778-0338-4386-8788-058621534CA5} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{7813E018-EAE3-49F4-BFB1-EC52765B4F47} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{5785FC7D-BB95-4E96-BC48-86CCE674F66E} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{DABFD94C-68F7-4525-8A74-098F408D3DA7} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{9F664CF5-7202-41B3-ACBA-719B583BFD14} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{D818980D-778D-4102-B28F-BC48786B6637} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{C393977B-2CCB-41B4-BBED-E9EF2584CA73} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{10EEDDFA-CCA7-4E7F-A620-F24973DD7FE2} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{706BF22A-01FD-4AA8-B673-D47DF085D22E} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{92258D19-B7D6-4095-9F0A-CE679CDFC33F} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{1C72A7C4-481B-4EFE-83F0-F9F1ECEF7E34} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{BA14CF82-D59D-4236-A01A-6B34F30C627D} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{090ACC92-84AB-4856-A3E9-1CF189E3306D} = {792FBEA8-5633-406B-880D-EFAAE441D922}
+		{2FA78D5A-6259-4454-A4F9-9B302CF9A845} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{DA443F83-3C5A-440A-B2A4-F7B8C2D5D6AD} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{9F24ABFD-39F1-4771-BF4C-1AE26937098A} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{5247667B-4FEC-48C3-945A-9C4BE7BF1F5B} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{C4F478AF-5F4E-4073-BE07-0EDC3BBF7DAF} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{2F1A5D6F-8CD7-42BC-8583-8336C8BA6D16} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{873C00C1-1D9B-4557-A1F2-D0037272724B} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{7B56F58B-B1F4-476F-96D0-DE241F171A58} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{B044CE1D-7502-4153-B2EB-9096D4B6F5FB} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{140D83CE-7634-4BE5-8A7B-9DFEDFF92C90} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{0D9683EA-F8B7-47A8-B687-CD15DB99A4FA} = {2392A01B-7AE1-48C7-86F2-E29F1A7C920E}
+		{12D5556C-C944-4F1F-AF41-DFDB7313E63B} = {0C7D3115-0BA0-4CA5-892C-74DDCC5A9532}
+		{7443DDFA-681A-4147-9DAC-10FEC6B6CEDB} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+		{2E2BDB56-6183-4627-8E2D-C3F2C7D8F19E} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+		{CA006E8F-BD2D-478A-BCC2-4207BE638725} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+		{AB020B25-95DB-4C6B-B9FA-5E10A25F6B90} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+		{E2208B71-66E6-45FF-8CC8-329428B2C846} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+		{9D617457-8423-479E-A5A1-83BC383AF15B} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+		{24520D4C-4B06-4D91-BC47-45942A8F5A51} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+		{2BF0C47B-4E7E-4BA1-B5AF-0112D835977E} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+		{9059D7A6-7D7D-4ECA-9F21-866701FBEA1F} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4256087B-279E-4CCC-950B-C264905BD910}
+	EndGlobalSection
+EndGlobal
