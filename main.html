@@ -14,13 +14,31 @@
     <script src="Script1.js"></script>
 </head>
 <body onload="main()">
-    <div id="Menu">
-        <ul>
-            Order :
-            <li onclick='createBox("Date");'>Date</li>
-            <li onclick='createBox("Date Reverse");'>Date Reverse</li>
-        </ul>
-    </div>
+
+    <!-- SORTING -->
+    <form id="Menu">
+
+        <!-- DATE REALEASE -->
+        <fieldset>
+            <legend>Order:</legend>
+            <label>
+                <input type="radio" name="order" value="Date"> Newest
+            </label>
+            <label>
+                <input type="radio" name="order" value="Date Reverse"> Oldest
+            </label>
+        </fieldset>
+
+        <!-- ELEMENTS -->
+        <label>
+            <input type="checkbox" id="orderByElements"> Order by Elements
+        </label>
+
+        <!-- SORT -->
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <!-- BOX -->
     <div id="Box"></div>
 </body>
 </html>

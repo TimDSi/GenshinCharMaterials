@@ -1,4 +1,19 @@
 // JavaScript source code
+function submitForm() {
+    var order = document.querySelector('input[name="order"]:checked').value;
+    var orderByElements = document.getElementById('orderByElements').checked;
+
+    console.log("Selected order: " + order);
+    console.log("Order by Elements: " + orderByElements);
+
+    var options = order;
+    if (orderByElements) {
+        options += " Elements";
+    }
+    console.log(options)
+    createBox(options);
+}
+
 
 function generateSortedCharacter(parameters) {
     if (parameters == undefined) {
@@ -13,15 +28,20 @@ function generateSortedCharacter(parameters) {
     // sort
     let options = parameters.split(' ');
     let sortedCharacters = [];
-    for (let o = 0 ; o < options.length ; o++) {
+    for (let o = 0; o < options.length; o++) {
         const option = options[o];
         switch (option) {
+
+            // unknown
+            default:
+                break;
+
+
             // sort from newest to oldest
             case "Date":
-            default:
                 sortedCharacters = [];
-                for (let index in charactersName) {
-                    sortedCharacters.push(charactersName[index]);
+                for (let index in charactersMaterials) {
+                    sortedCharacters.push(charactersMaterials[index].name);
                 }
                 charactersName = sortedCharacters;
                 break;
@@ -35,10 +55,21 @@ function generateSortedCharacter(parameters) {
                 charactersName = sortedCharacters;
                 break;
 
-            
+            case "Elements":
+                let elements = ["pyro", "hydro", "anemo", "electro", "dendro", "cryo", "geo"];
+                sortedCharacters = [];
+                for (let e = 0; e < elements.length; e++) {
+                    for (let index in charactersName) {
+                        if (charactersMaterials[getCharacterMaterialIndex(charactersName[index])].element == elements[e]) {
+                            sortedCharacters.push(charactersName[index]);
+                        }
+                    }
+                }
+                charactersName = sortedCharacters;
+                break;
         }
     }
-    
+
     //console.log(charactersName)
     return charactersName;
 }
