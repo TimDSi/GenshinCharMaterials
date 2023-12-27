@@ -61,6 +61,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "characterImages", "characte
 		Mika.png = Mika.png
 		Mona.png = Mona.png
 		Nahida.png = Nahida.png
+		Navia.png = Navia.png
 		Neuvillette.png = Neuvillette.png
 		Nilou.png = Nilou.png
 		Ningguang.png = Ningguang.png
@@ -317,8 +318,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Childe", "Childe", "{CA006E8F-BD2D-478A-BCC2-4207BE638725}"
 	ProjectSection(SolutionItems) = preProject
 		ShadowoftheWarrior.png = ShadowoftheWarrior.png
-		TuskofMonocerosCaeli.png = TuskofMonocerosCaeli.png
 		ShardofaFoulLegacy.png = ShardofaFoulLegacy.png
+		TuskofMonocerosCaeli.png = TuskofMonocerosCaeli.png
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azhdaha", "Azhdaha", "{AB020B25-95DB-4C6B-B9FA-5E10A25F6B90}"

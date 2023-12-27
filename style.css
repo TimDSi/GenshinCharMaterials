@@ -2,6 +2,12 @@
 {
 }
 
+#Box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    grid-gap: 1em;
+}
+
 .character {
     outline: solid black 1px;
     width: 100%;
@@ -30,7 +36,7 @@
 }
 
 .character > .materialsRequired {
-    flex: 2;
+    flex: 1;
 }
 
 .material {
@@ -40,4 +46,8 @@
 
 .material > img {
     height: 100%;
+}
+
+.notOwned {
+    filter: grayscale(100%);
 }

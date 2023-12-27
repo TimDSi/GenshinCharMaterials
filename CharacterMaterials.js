@@ -13,6 +13,7 @@ class CharacterMaterials {
 }
 
 let charactersMaterials = [
+    new CharacterMaterials("Navia",             "geo",      "DPS",      "Coppelius",        "Spring of the First Dewdrop",  "Fontemer Aberrants",   "Equity",       "Lightless Silk String"),
     new CharacterMaterials("Furina",            "hydro",    "Support",  "Hydro Tulpa",              "Lakelight Lily",       "Whopperflowers",       "Justice",      "Lightless Mass"),
     new CharacterMaterials("Charlotte",         "cryo",     "Support",  "Tourbillon Device",        "Beryl Conch",          "Clockwork Meka",       "Justice",      "Lightless Silk String"),
     new CharacterMaterials("Wriothesley",       "cryo",     "DPS",      "Tourbillon Device",        "Subdetection Unit",    "Clockwork Meka",       "Order",        "Primordial Greenbloom"),

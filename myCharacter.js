@@ -6,6 +6,10 @@
 */
 let myCharacter = [
     new Character(
+        "Navia", 70,
+        [6, 8, 6],
+    ),
+    new Character(
         "Furina", 80,
         [6, 10, 10],
     ),
