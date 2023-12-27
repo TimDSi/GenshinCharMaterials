@@ -47,13 +47,28 @@ function generateRequiredMaterials(character) {
             }
         }
     }
-
-    // add rows
+    //sort requirements
+    let materialsIndexes = []
     for (const [key, value] of requirements.entries()) {
         if (value > 0) {
-            materialsRequired.appendChild(generateRessourceQuantity(key, value, getMyCharacterIndex(character.name)==-1));
+            const index = getMaterialCategory(key);
+            if (!(materialsIndexes.indexOf(index) >= 0)) {
+                materialsIndexes.push(index);
+            }
         }
     }
+    console.log(materialsIndexes)
+    
+
+    // add rows
+    for (let j = 0; j < materialsIndexes.length; j++) {
+        for (const [key, value] of requirements.entries()) {
+            if (materialsIndexes[j] == getMaterialCategory(key)) {
+                materialsRequired.appendChild(generateRessourceQuantity(key, value, getMyCharacterIndex(character.name) == -1));
+            }
+        }
+    }
+    
 
     
     return materialsRequired;

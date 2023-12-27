@@ -7,6 +7,7 @@ class Material {
 }
 
 let materials = [
+    new Material("Mora", ["Mora"]),
     new Material("defaultLongMaterial", ["Material1", "Material2", "Material3"]),
     // Fontaine
     new Material("Clockwork Meka", ["Meshing Gear", "Spur Gear", "Artificed Dynamic Gear"]),
@@ -51,6 +52,21 @@ let materials = [
 
 function getMaterialIndex(material) {
     for (let i = 0; i < materials.length; i++) {
+        if (materials[i].material == material) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+function getMaterialCategory(material) {
+    for (let i = 0; i < materials.length; i++) {
+        let forms = materials[i].forms
+        for (let j = 0; j < forms.length; j++) {
+            if (forms[j] == material) {
+                return i;
+            }
+        }
         if (materials[i].material == material) {
             return i;
         }
