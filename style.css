@@ -36,7 +36,13 @@ h1 {
     display: flex;
 }
 
+/*
+    Presentation
+*/
 
+#Menu {
+    color: #FFFFFF;
+}
 
 /*
     Presentation

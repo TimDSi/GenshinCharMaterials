@@ -56,9 +56,7 @@ function generateRequiredMaterials(character) {
                 materialsIndexes.push(index);
             }
         }
-    }
-    console.log(materialsIndexes)
-    
+    }    
 
     // add rows
     for (let j = 0; j < materialsIndexes.length; j++) {
@@ -74,17 +72,15 @@ function generateRequiredMaterials(character) {
     return materialsRequired;
 }
 
-function generateSortedCharacter() {
-    let charactersName = [];
-    for (let index in charactersMaterials) {
-        charactersName.push(charactersMaterials[index].name);
-    }
-    return charactersName;
-}
 
-function main() {
+function createBox(option) {
     let box = document.getElementById("Box");
-    let sortedCharacters = generateSortedCharacter();
+    // clear
+    while (box.firstChild) {
+        box.removeChild(box.lastChild);
+    }
+    // generate
+    let sortedCharacters = generateSortedCharacter(option);
     for (let index in sortedCharacters) {
         let characterName = sortedCharacters[index];
         let ownIndex = getMyCharacterIndex(characterName);
@@ -200,4 +196,8 @@ function main() {
 
         box.appendChild(div);
     }
+}
+
+function main() {
+    createBox();
 }

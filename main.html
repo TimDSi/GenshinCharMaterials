@@ -10,14 +10,15 @@
     <script src="CharacterMaterials.js"></script>
     <script src="Character.js"></script>
     <script src="myCharacter.js"></script>
+    <script src="Sorter.js"></script>
     <script src="Script1.js"></script>
 </head>
 <body onload="main()">
     <div id="Menu">
         <ul>
-            Display :
-            <li>Line</li>
-            <li>Squares</li>
+            Order :
+            <li onclick='createBox("Date");'>Date</li>
+            <li onclick='createBox("Date Reverse");'>Date Reverse</li>
         </ul>
     </div>
     <div id="Box"></div>

@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{E959C94B-CD2
 		Material.js = Material.js
 		myCharacter.js = myCharacter.js
 		Script1.js = Script1.js
+		Sorter.js = Sorter.js
 		style.css = style.css
 	EndProjectSection
 EndProject
