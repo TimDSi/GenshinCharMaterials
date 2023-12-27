@@ -1,6 +1,25 @@
-﻿body
+﻿/*
+    General
+*/
+
+body
 {
+    background-color: #222222;
 }
+
+p, th, td {
+    font-size: 1vw;
+}
+
+
+h1 {
+    font-size: 2vw;
+}
+
+.notOwned {
+    filter: grayscale(100%);
+}
+
 
 #Box {
     display: grid;
@@ -8,46 +27,71 @@
     grid-gap: 1em;
 }
 
-.character {
+#Box > .character {
     outline: solid black 1px;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
 }
 
-.character > .presentation {
-    width: 25%;
-    flex: 1;
+
+
+/*
+    Presentation
+*/
+
+#Box > .character > .presentation {
+    width: 30%;
     display: flex;
     flex-direction: column;
 }
 
-.presentation > image {
+#Box > .character > .presentation > image {
     flex: 1;
 }
 
-.presentation > h1 {
-    flex: 1;
-    text-align: center;
-}
-
-.character > .characterStats {
+#Box > .character > .presentation > h1 {
     flex: 1;
     text-align: center;
 }
 
-.character > .materialsRequired {
-    flex: 1;
+
+/*
+    Stats
+*/
+
+#Box > .character > .characterStats {
+    margin: 5%;
+    width: 30%;
+    height: fit-content;
+    text-align: center;
 }
 
-.material {
+/*
+    Materials
+*/
+#Box > .character > .materialsRequired {
+    width: 30%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Box > .character > .materialsRequired > .material:first-child {
+    width: 100%;
+}
+
+#Box > .character > .materialsRequired > .material {
+    width: 30%;
     height: 3em;
     display: flex;
 }
 
-.material > img {
+#Box > .character > .materialsRequired > .material > img {
     height: 100%;
-}
-
-.notOwned {
-    filter: grayscale(100%);
 }

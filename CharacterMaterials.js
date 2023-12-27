@@ -99,58 +99,59 @@ function getCharacterMaterialIndex(name) {
 }
 
 function generateMaterialsForTalentLevel(name, level) {
-    let character = charactersMaterials[getCharacterMaterialIndex(name)];
+    const character = charactersMaterials[getCharacterMaterialIndex(name)];
     const charMaterials = new Map();
+    const enemyMaterials = materials[getMaterialIndex(character.enemy)];
+    const talentMaterials = materials[getMaterialIndex(character.talentMaterial)];
+
     switch (level) {
         case 2:
             charMaterials.set("Mora", 12500);
-            charMaterials.set(materials[getMaterialIndex(character.enemy)].forms[0], 6);
-            charMaterials.set(materials[getMaterialIndex(character.talentMaterial)].forms[0], 3);
+            charMaterials.set(enemyMaterials.forms[0], 6);
+            charMaterials.set(talentMaterials.forms[0], 3);
             break;
         case 3:
             charMaterials.set("Mora", 17500);
-            charMaterials.set(materials[getMaterialIndex(character.enemy)].forms[1], 3);
-            charMaterials.set(materials[getMaterialIndex(character.talentMaterial)].forms[1], 2);
+            charMaterials.set(enemyMaterials.forms[1], 3);
+            charMaterials.set(talentMaterials.forms[1], 2);
             break;
         case 4:
             charMaterials.set("Mora", 25000);
-            charMaterials.set(materials[getMaterialIndex(character.enemy)].forms[1], 4);
-            charMaterials.set(materials[getMaterialIndex(character.talentMaterial)].forms[1], 4);
+            charMaterials.set(enemyMaterials.forms[1], 4);
+            charMaterials.set(talentMaterials.forms[1], 4);
             break;
         case 5:
             charMaterials.set("Mora", 30000);
-            charMaterials.set(materials[getMaterialIndex(character.enemy)].forms[1], 6);
-            charMaterials.set(materials[getMaterialIndex(character.talentMaterial)].forms[1], 6);
+            charMaterials.set(enemyMaterials.forms[1], 6);
+            charMaterials.set(talentMaterials.forms[1], 6);
             break;
         case 6:
             charMaterials.set("Mora", 37500);
-            charMaterials.set(materials[getMaterialIndex(character.enemy)].forms[1], 9);
-            charMaterials.set(materials[getMaterialIndex(character.talentMaterial)].forms[1], 9);
+            charMaterials.set(enemyMaterials.forms[1], 9);
+            charMaterials.set(talentMaterials.forms[1], 9);
             break;
         case 7:
             charMaterials.set("Mora", 120000);
-            const talentMaterial = materials[getMaterialIndex(character.talentMaterial)].forms[2];
-            charMaterials.set(talentMaterial, 4);
-            const mobMaterial = materials[getMaterialIndex(character.enemy)].forms[2];
-            charMaterials.set(mobMaterial, 4);
+            charMaterials.set(enemyMaterials.forms[2], 4);
+            charMaterials.set(talentMaterials.forms[2], 4);
             charMaterials.set(character.talentBoss, 1);
             break;
         case 8:
             charMaterials.set("Mora", 260000);
-            charMaterials.set(materials[getMaterialIndex(character.enemy)].forms[2], 6);
-            charMaterials.set(materials[getMaterialIndex(character.talentMaterial)].forms[2], 6);
+            charMaterials.set(enemyMaterials.forms[2], 6);
+            charMaterials.set(talentMaterials.forms[2], 6);
             charMaterials.set(character.talentBoss, 1);
             break;
         case 9:
             charMaterials.set("Mora", 450000);
-            charMaterials.set(materials[getMaterialIndex(character.enemy)].forms[2], 9);
-            charMaterials.set(materials[getMaterialIndex(character.talentMaterial)].forms[2], 12);
+            charMaterials.set(enemyMaterials.forms[2], 9);
+            charMaterials.set(talentMaterials.forms[2], 12);
             charMaterials.set(character.talentBoss, 2);
             break;
         case 10:
             charMaterials.set("Mora", 700000);
-            charMaterials.set(materials[getMaterialIndex(character.enemy)].forms[2], 12);
-            charMaterials.set(materials[getMaterialIndex(character.talentMaterial)].forms[2], 16);
+            charMaterials.set(enemyMaterials.forms[2], 12);
+            charMaterials.set(talentMaterials.forms[2], 16);
             charMaterials.set(character.talentBoss, 2);
             break;
         default: break;
@@ -158,6 +159,10 @@ function generateMaterialsForTalentLevel(name, level) {
     return charMaterials;
 }
 
+function generateAscensionMaterial(character, highestTalent) {
+    const charMaterials = new Map();
 
+    return charMaterials;
+}
 
 

@@ -9,13 +9,13 @@ class Material {
 let materials = [
     new Material("defaultLongMaterial", ["Material1", "Material2", "Material3"]),
     // Fontaine
-    new Material("Clockwork Meka", ["Spur Gear", "Meshing Gear", "Artificed Dynamic Gear"]),
+    new Material("Clockwork Meka", ["Meshing Gear", "Spur Gear", "Artificed Dynamic Gear"]),
     new Material("Fontemer Aberrants", ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"]),
     // Sumeru
     new Material("Eremites", ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"]),
     new Material("Fungus", ["Fungal Spores", "Luminescent Pollen", "Crystalline Cryst Dust"]),
     // Inazuma
-    new Material("Nobushi", ["Old Handguard", "Famed Handguard", "Kageuchi Handguard"]),
+    new Material("Nobushi", ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"]),
     new Material("Specter", ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"]),
     // Liyue
     new Material("Treasure Hoarders", ["Treasure Hoarder Insignia", "Silver Raven Insignia", "Golden Raven Insignia"]),

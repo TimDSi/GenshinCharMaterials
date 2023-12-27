@@ -27,7 +27,6 @@ function generateRequiredMaterials(character) {
     materialsRequired.setAttribute("class", "materialsRequired");
     let materialIndex = getCharacterMaterialIndex(character.name);
 
-
     const requirements = new Map();
 
     for (let j = 0; j < 3; j++) {
@@ -83,6 +82,39 @@ function main() {
         let materialIndex = getCharacterMaterialIndex(characterName);
         let div = document.createElement("div");
         div.setAttribute("class", "character");
+        let color = "#FFFFFF";
+        switch (charactersMaterials[materialIndex].element) {
+            case "geo":
+                color = "#FAB632";
+                break;
+            case "electro":
+                color = "#AF8EC1";
+                break;
+            case "hydro":
+                color = "#4CC2F1";
+                break;
+            case "cryo":
+                color = "#9FD6E3";
+                break;
+            case "pyro":
+                color = "#EF7938";
+                break;
+            case "anemo":
+                color = "#74C2A8";
+                break;
+            case "dendro":
+                color = "#A5C83B";
+                break;
+            default:
+                color = "#FFFFFF";
+                break;
+        }
+        if (ownIndex == -1) {
+            color = "#444444";
+        }
+        div.style.backgroundColor = color;
+        div.style.background = `linear-gradient(to bottom, ${color}, #FFFFFF)`;
+
 
         // presentation
         let presentation = document.createElement("div");
@@ -112,6 +144,7 @@ function main() {
             // level
             let level = document.createElement("th");
             level.innerHTML = "Level " + character.level;
+            level.colSpan = 2;
             currentStats.appendChild(level);
 
             //talents
