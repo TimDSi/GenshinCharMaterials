@@ -19,43 +19,57 @@
     <form id="Menu">
 
         <!-- DATE REALEASE -->
-        <fieldset>
-            <legend>Order:</legend>
-            <label>
-                <input checked type="radio" name="orderByDate" value="Newest"> Newest
-            </label>
-            <label>
-                <input type="radio" name="orderByDate" value="Oldest"> Oldest
-            </label>
-        </fieldset>
+        <div>
+            <fieldset>
+                <legend>Order:</legend>
+                <label>
+                    <input checked type="radio" name="orderByDate" value="Newest"> Newest
+                </label>
+                <label>
+                    <input type="radio" name="orderByDate" value="Oldest"> Oldest
+                </label>
+            </fieldset>
+        </div>
 
         <!-- Regions -->
-        <label>
-            <input type="checkbox" id="orderByRegions"> Order by Regions
-        </label>
+        <div>
+            <label>
+                <input type="checkbox" id="orderByRegions"> Order by Regions
+            </label>
+        </div>
 
         <!-- ELEMENTS -->
-        <label>
-            <input type="checkbox" id="orderByElements"> Order by Elements
-        </label>
+        <div>
+            <label>
+                <input type="checkbox" id="orderByElements"> Order by Elements
+            </label>
+        </div>
 
         <!-- QUALITY -->
-        <label>
-            <input type="checkbox" id="orderByQuality"> Order by Quality
-        </label>
+        <div>
+            <label>
+                <input type="checkbox" id="orderByQuality"> Order by Quality
+            </label>
+        </div>
 
         <!-- NotComplete -->
-        <label>
-            <input type="checkbox" id="notComplete"> Not Complete
-        </label>
+        <div>
+            <label>
+                <input type="checkbox" id="notComplete"> Not Complete
+            </label>
+        </div>
 
         <!-- Owned -->
-        <label>
-            <input type="checkbox" id="ownedFilter"> Owned
-        </label>
+        <div>
+            <label>
+                <input type="checkbox" id="ownedFilter"> Owned
+            </label>
+        </div>
 
         <!-- SORT -->
-        <button type="button" onclick="submitForm()">Submit</button>
+        <div>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </div>
     </form>
 
     <!-- BOX -->

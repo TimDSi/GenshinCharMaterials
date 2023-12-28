@@ -58,10 +58,6 @@ let myCharacter = [
         [9, 9, 9]
     ),
     new Character(
-        "Cyno", 1,
-        [1, 1, 1]
-    ),
-    new Character(
         "Candace", 80,
         [6, 6, 6]
     ),

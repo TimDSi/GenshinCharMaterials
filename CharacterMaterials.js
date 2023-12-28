@@ -26,7 +26,7 @@ let charactersMaterials = [
     new CharacterMaterials("Kirara",            4,  "Inazuma",      "dendro",   "Support",  "Evergloom Ring",           "Amakumo Fruit",        "Specter",              "Transience",   "Everamber"),
     new CharacterMaterials("Baizhu",            5,  "Liyue",        "dendro",   "Support",  "Evergloom Ring",           "Violetgrass",          "Fungus",               "Gold",         "Worldspan Fern"),
     new CharacterMaterials("Kaveh",             4,  "Sumeru",       "dendro",   "DPS",      "Quelled Creeper",          "Mourning Flower",      "Fungus",               "Ingenuity",    "Primordial Greenbloom"),
-    new CharacterMaterials("Mika",              4,  "Mondstadt",    "cryo",     "DPS",      "Pseudo-Stamens",           "Wolfhook",             "Fatui",                "Ballad",       "Mirror of Mushin"),
+    new CharacterMaterials("Mika",              4,  "Mondstadt",    "cryo",     "Support",      "Pseudo-Stamens",           "Wolfhook",             "Fatui",                "Ballad",       "Mirror of Mushin"),
     new CharacterMaterials("Dehya",             5,  "Sumeru",       "pyro",     "Support",  "Light Guiding Tetrahedron", "Sand Grease Pupa",    "Eremites",             "Praxis",       "Puppet Strings"),
     new CharacterMaterials("Alhaitham",         5,  "Sumeru",       "dendro",   "DPS",      "Pseudo-Stamens",           "Sand Grease Pupa",     "Eremites",             "Ingenuity",    "Mirror of Mushin"),
     new CharacterMaterials("Yaoyao",            4,  "Liyue",        "dendro",   "Support",  "Quelled Creeper",          "Jueyun Chili",         "Slimes",               "Diligence",    "Daka's Bell"),
