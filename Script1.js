@@ -73,14 +73,14 @@ function generateRequiredMaterials(character) {
 }
 
 
-function createBox(option) {
+function createBox() {
     let box = document.getElementById("Box");
     // clear
     while (box.firstChild) {
         box.removeChild(box.lastChild);
     }
     // generate
-    let sortedCharacters = generateSortedCharacter(option);
+    let sortedCharacters = generateSortedCharacter();
     for (let index in sortedCharacters) {
         let characterName = sortedCharacters[index];
         let ownIndex = getMyCharacterIndex(characterName);
