@@ -22,16 +22,36 @@
         <fieldset>
             <legend>Order:</legend>
             <label>
-                <input type="radio" name="order" value="Date"> Newest
+                <input checked type="radio" name="orderByDate" value="Newest"> Newest
             </label>
             <label>
-                <input type="radio" name="order" value="Date Reverse"> Oldest
+                <input type="radio" name="orderByDate" value="Oldest"> Oldest
             </label>
         </fieldset>
+
+        <!-- Regions -->
+        <label>
+            <input type="checkbox" id="orderByRegions"> Order by Regions
+        </label>
 
         <!-- ELEMENTS -->
         <label>
             <input type="checkbox" id="orderByElements"> Order by Elements
+        </label>
+
+        <!-- QUALITY -->
+        <label>
+            <input type="checkbox" id="orderByQuality"> Order by Quality
+        </label>
+
+        <!-- NotComplete -->
+        <label>
+            <input type="checkbox" id="notComplete"> Not Complete
+        </label>
+
+        <!-- Owned -->
+        <label>
+            <input type="checkbox" id="ownedFilter"> Owned
         </label>
 
         <!-- SORT -->
