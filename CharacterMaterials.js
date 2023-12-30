@@ -172,31 +172,37 @@ function generateAscensionMaterial(character, ascention) {
         case 1:
             charMaterials.set("Mora", 20000);
             charMaterials.set(elementMaterials.forms[0], 1);
+            charMaterials.set(character.localSpeciality, 3);
             charMaterials.set(enemyMaterials.forms[0], 3);
             break;
         case 2:
             charMaterials.set("Mora", 40000);
             charMaterials.set(elementMaterials.forms[1], 3);
+            charMaterials.set(character.localSpeciality, 10);
             charMaterials.set(enemyMaterials.forms[0], 15);
             break;
         case 3:
             charMaterials.set("Mora", 60000);
             charMaterials.set(elementMaterials.forms[1], 6);
+            charMaterials.set(character.localSpeciality, 20);
             charMaterials.set(enemyMaterials.forms[1], 12);
             break;
         case 4:
             charMaterials.set("Mora", 80000);
             charMaterials.set(elementMaterials.forms[2], 3);
+            charMaterials.set(character.localSpeciality, 30);
             charMaterials.set(enemyMaterials.forms[1], 18);
             break;
         case 5:
             charMaterials.set("Mora", 100000);
             charMaterials.set(elementMaterials.forms[2], 6);
+            charMaterials.set(character.localSpeciality, 45);
             charMaterials.set(enemyMaterials.forms[2], 12);
             break;
         case 6:
             charMaterials.set("Mora", 120000);
             charMaterials.set(elementMaterials.forms[3], 6);
+            charMaterials.set(character.localSpeciality, 60);
             charMaterials.set(enemyMaterials.forms[2], 24);
             break;
         default: break;

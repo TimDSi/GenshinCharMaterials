@@ -1,6 +1,6 @@
 // JavaScript source code
 
-function generateRessourceQuantity(ressource, quantity, notOwn) {
+function generateRessourceQuantity(ressource, quantity) {
     let ressourceContainer = document.createElement("li");
     ressourceContainer.setAttribute("class", "material")
 
@@ -8,9 +8,6 @@ function generateRessourceQuantity(ressource, quantity, notOwn) {
     let ressourceImage = document.createElement("img");
     ressourceImage.src = "./" + ressource.replace(/\s/g, '').replace(/'/g, '') + ".png";
     ressourceImage.alt = ressource;
-    if (notOwn) {
-        ressourceImage.className = "notOwned";
-    }
     ressourceContainer.appendChild(ressourceImage);
 
     // value
@@ -80,7 +77,7 @@ function generateRequiredMaterials(character) {
     for (let j = 0; j < materialsIndexes.length; j++) {
         for (const [key, value] of requirements.entries()) {
             if (materialsIndexes[j] == getMaterialCategory(key)) {
-                materialsRequired.appendChild(generateRessourceQuantity(key, value, getMyCharacterIndex(character.name) == -1));
+                materialsRequired.appendChild(generateRessourceQuantity(key, value));
             }
         }
     }
