@@ -29,6 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "characterImages", "characte
 		Bennett.png = Bennett.png
 		Candace.png = Candace.png
 		Charlotte.png = Charlotte.png
+		Chevreuse.png = Chevreuse.png
 		Chongyun.png = Chongyun.png
 		Collei.png = Collei.png
 		Cyno.png = Cyno.png
@@ -365,11 +366,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllDevouringNarwhal", "AllD
 		LightlessSilkString.png = LightlessSilkString.png
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "characterNC", "characterNC", "{8F3E3520-EE8B-4D65-9EE5-146D4EE156C5}"
-	ProjectSection(SolutionItems) = preProject
-		NaviaNC.png = NaviaNC.png
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -418,7 +414,6 @@ Global
 		{24520D4C-4B06-4D91-BC47-45942A8F5A51} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
 		{2BF0C47B-4E7E-4BA1-B5AF-0112D835977E} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
 		{9059D7A6-7D7D-4ECA-9F21-866701FBEA1F} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
-		{8F3E3520-EE8B-4D65-9EE5-146D4EE156C5} = {DA7D878C-CEB6-4BC0-ACE9-B270C5205151}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4256087B-279E-4CCC-950B-C264905BD910}
