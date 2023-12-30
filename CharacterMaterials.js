@@ -162,10 +162,111 @@ function generateMaterialsForTalentLevel(name, level) {
     return charMaterials;
 }
 
-function generateAscensionMaterial(character, highestTalent) {
+function generateAscensionMaterial(character, ascention) {
+
     const charMaterials = new Map();
+
+    const enemyMaterials = materials[getMaterialIndex(character.enemy)];
+    switch (ascention) {
+        case 1:
+            charMaterials.set("Mora", 20000);
+            charMaterials.set(enemyMaterials.forms[0], 3);
+            break;
+        case 2:
+            charMaterials.set("Mora", 40000);
+            charMaterials.set(enemyMaterials.forms[0], 15);
+            break;
+        case 3:
+            charMaterials.set("Mora", 60000);
+            charMaterials.set(enemyMaterials.forms[1], 12);
+            break;
+        case 4:
+            charMaterials.set("Mora", 80000);
+            charMaterials.set(enemyMaterials.forms[1], 18);
+            break;
+        case 5:
+            charMaterials.set("Mora", 100000);
+            charMaterials.set(enemyMaterials.forms[2], 12);
+            break;
+        case 6:
+            charMaterials.set("Mora", 120000);
+            charMaterials.set(enemyMaterials.forms[2], 24);
+            break;
+        default: break;
+    }
 
     return charMaterials;
 }
 
+function levelForTalent(talent) {
+    level = 0
+    switch (talent) {
+        case 2:
+            level = 20;
+            break;
+        case 3:
+        case 4:
+            level = 40;
+            break;
+        case 5:
+        case 6:
+            level = 50;
+            break;
+        case 7:
+        case 8:
+            level = 60;
+            break;
+        case 9:
+        case 10:
+            level = 80;
+            break;
+        default: break;
+    }
+    return level;
+}
+
+function generateCharacterLevelUp(character, maxTalentLevel) {
+
+    const characterMaterial = charactersMaterials[getCharacterMaterialIndex(character.name)];
+    const charMaterials = new Map();
+
+    let characterLevel = character.level;
+    while (characterLevel < levelForTalent(maxTalentLevel)) {
+        characterLevel++;
+        let characterAscentionMaterials = new Map();
+        
+        switch (characterLevel) {
+            case 19:
+                console.log(characterLevel)
+                characterAscentionMaterials = generateAscensionMaterial(characterMaterial, 1);
+                break;
+            case 39:
+                characterAscentionMaterials = generateAscensionMaterial(characterMaterial, 2);
+                break;
+            case 49:
+                characterAscentionMaterials = generateAscensionMaterial(characterMaterial, 3);
+                break;
+            case 59:
+                characterAscentionMaterials = generateAscensionMaterial(characterMaterial, 4);
+                break;
+            case 69:
+                characterAscentionMaterials = generateAscensionMaterial(characterMaterial, 5);
+                break;
+            case 79:
+                characterAscentionMaterials = generateAscensionMaterial(characterMaterial, 6);
+                break;
+            default: break;
+        }
+
+        for (const [key, value] of characterAscentionMaterials.entries()) {
+            if (charMaterials.has(key)) {
+                charMaterials.set(key, value + charMaterials.get(key));
+            } else {
+                charMaterials.set(key, value);
+            }
+        }
+    }
+
+    return charMaterials;
+}
 
