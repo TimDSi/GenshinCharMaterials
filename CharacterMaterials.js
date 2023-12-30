@@ -167,29 +167,36 @@ function generateAscensionMaterial(character, ascention) {
     const charMaterials = new Map();
 
     const enemyMaterials = materials[getMaterialIndex(character.enemy)];
+    const elementMaterials = materials[getMaterialIndex(character.element)];
     switch (ascention) {
         case 1:
             charMaterials.set("Mora", 20000);
+            charMaterials.set(elementMaterials.forms[0], 1);
             charMaterials.set(enemyMaterials.forms[0], 3);
             break;
         case 2:
             charMaterials.set("Mora", 40000);
+            charMaterials.set(elementMaterials.forms[1], 3);
             charMaterials.set(enemyMaterials.forms[0], 15);
             break;
         case 3:
             charMaterials.set("Mora", 60000);
+            charMaterials.set(elementMaterials.forms[1], 6);
             charMaterials.set(enemyMaterials.forms[1], 12);
             break;
         case 4:
             charMaterials.set("Mora", 80000);
+            charMaterials.set(elementMaterials.forms[2], 3);
             charMaterials.set(enemyMaterials.forms[1], 18);
             break;
         case 5:
             charMaterials.set("Mora", 100000);
+            charMaterials.set(elementMaterials.forms[2], 6);
             charMaterials.set(enemyMaterials.forms[2], 12);
             break;
         case 6:
             charMaterials.set("Mora", 120000);
+            charMaterials.set(elementMaterials.forms[3], 6);
             charMaterials.set(enemyMaterials.forms[2], 24);
             break;
         default: break;
@@ -202,19 +209,19 @@ function levelForTalent(talent) {
     level = 0
     switch (talent) {
         case 2:
-            level = 20;
+            level = 40;
             break;
         case 3:
         case 4:
-            level = 40;
+            level = 50;
             break;
         case 5:
         case 6:
-            level = 50;
+            level = 60;
             break;
         case 7:
         case 8:
-            level = 60;
+            level = 70;
             break;
         case 9:
         case 10:

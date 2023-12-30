@@ -48,6 +48,14 @@ let materials = [
     new Material("Ballad", ["Teachings of Ballad", "Guide to Ballad", "Philosophies of Ballad"]),
     new Material("Resistance", ["Teachings of Resistance", "Guide to Resistance", "Philosophies of Resistance"]),
     new Material("Freedom", ["Teachings of Freedom", "Guide to Freedom", "Philosophies of Freedom"]),
+    // ascension Stone
+    new Material("pyro", ["Agnidus Agate Sliver", "Agnidus Agate Fragment", "Agnidus Agate Chunk", "Agnidus Agate Gemstone"]),
+    new Material("hydro", ["Varunada Lazurite Sliver", "Varunada Lazurite Fragment", "Varunada Lazurite Chunk", "Varunada Lazurite Gemstone"]),
+    new Material("anemo", ["Vayuda Turquoise Sliver", "Vayuda Turquoise Fragment", "Vayuda Turquoise Chunk", "Vayuda Turquoise Gemstone"]),
+    new Material("electro", ["Vajrada Amethyst Sliver", "Vajrada Amethyst Fragment", "Vajrada Amethyst Chunk", "Vajrada Amethyst Gemstone"]),
+    new Material("dendro", ["Nagadus Emerald Sliver", "Nagadus Emerald Fragment", "Nagadus Emerald Chunk", "Nagadus Emerald Gemstone"]),
+    new Material("cryo", ["Shivada Jade Sliver", "Shivada Jade Fragment", "Shivada Jade Chunk", "Shivada Jade Gemstone"]),
+    new Material("geo", ["Prithiva Topaz Sliver", "Prithiva Topaz Fragment", "Prithiva Topaz Chunk", "Prithiva Topaz Gemstone"]),
 ];
 
 function getMaterialIndex(material) {

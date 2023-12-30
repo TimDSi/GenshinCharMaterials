@@ -366,6 +366,64 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllDevouringNarwhal", "AllD
 		LightlessSilkString.png = LightlessSilkString.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ElementalMaterials", "ElementalMaterials", "{B3174199-BEA2-4E87-92DD-3B86AB9DC444}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Geo", "Geo", "{310B6CD0-C36F-41D9-9761-501FBF45E353}"
+	ProjectSection(SolutionItems) = preProject
+		PrithivaTopazChunk.png = PrithivaTopazChunk.png
+		PrithivaTopazFragment.png = PrithivaTopazFragment.png
+		PrithivaTopazGemstone.png = PrithivaTopazGemstone.png
+		PrithivaTopazSliver.png = PrithivaTopazSliver.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pyro", "Pyro", "{676AAE03-A68F-4EC1-9D51-BD0AA613CD0D}"
+	ProjectSection(SolutionItems) = preProject
+		AgnidusAgateChunk.png = AgnidusAgateChunk.png
+		AgnidusAgateFragment.png = AgnidusAgateFragment.png
+		AgnidusAgateGemstone.png = AgnidusAgateGemstone.png
+		AgnidusAgateSliver.png = AgnidusAgateSliver.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hydro", "Hydro", "{9CF785E6-4202-4D8C-AA1C-829D99E8EB08}"
+	ProjectSection(SolutionItems) = preProject
+		VarunadaLazuriteChunk.png = VarunadaLazuriteChunk.png
+		VarunadaLazuriteFragment.png = VarunadaLazuriteFragment.png
+		VarunadaLazuriteGemstone.png = VarunadaLazuriteGemstone.png
+		VarunadaLazuriteSliver.png = VarunadaLazuriteSliver.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Anemo", "Anemo", "{1EE7DA4A-9295-4E3E-9770-74103D23146E}"
+	ProjectSection(SolutionItems) = preProject
+		VayudaTurquoiseChunk.png = VayudaTurquoiseChunk.png
+		VayudaTurquoiseFragment.png = VayudaTurquoiseFragment.png
+		VayudaTurquoiseGemstone.png = VayudaTurquoiseGemstone.png
+		VayudaTurquoiseSliver.png = VayudaTurquoiseSliver.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Electro", "Electro", "{2FE55A83-D165-4BD9-BD34-503B0430F366}"
+	ProjectSection(SolutionItems) = preProject
+		VajradaAmethystChunk.png = VajradaAmethystChunk.png
+		VajradaAmethystFragment.png = VajradaAmethystFragment.png
+		VajradaAmethystGemstone.png = VajradaAmethystGemstone.png
+		VajradaAmethystSliver.png = VajradaAmethystSliver.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cryo", "Cryo", "{921DA2F4-4687-4A0D-B78B-B64E912A970A}"
+	ProjectSection(SolutionItems) = preProject
+		ShivadaJadeChunk.png = ShivadaJadeChunk.png
+		ShivadaJadeFragment.png = ShivadaJadeFragment.png
+		ShivadaJadeGemstone.png = ShivadaJadeGemstone.png
+		ShivadaJadeSliver.png = ShivadaJadeSliver.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dendro", "Dendro", "{E411565D-4F60-469E-AE04-3DDB5DD959F5}"
+	ProjectSection(SolutionItems) = preProject
+		NagadusEmeraldChunk.png = NagadusEmeraldChunk.png
+		NagadusEmeraldFragment.png = NagadusEmeraldFragment.png
+		NagadusEmeraldGemstone.png = NagadusEmeraldGemstone.png
+		NagadusEmeraldSliver.png = NagadusEmeraldSliver.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -414,6 +472,14 @@ Global
 		{24520D4C-4B06-4D91-BC47-45942A8F5A51} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
 		{2BF0C47B-4E7E-4BA1-B5AF-0112D835977E} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
 		{9059D7A6-7D7D-4ECA-9F21-866701FBEA1F} = {12D5556C-C944-4F1F-AF41-DFDB7313E63B}
+		{B3174199-BEA2-4E87-92DD-3B86AB9DC444} = {0C7D3115-0BA0-4CA5-892C-74DDCC5A9532}
+		{310B6CD0-C36F-41D9-9761-501FBF45E353} = {B3174199-BEA2-4E87-92DD-3B86AB9DC444}
+		{676AAE03-A68F-4EC1-9D51-BD0AA613CD0D} = {B3174199-BEA2-4E87-92DD-3B86AB9DC444}
+		{9CF785E6-4202-4D8C-AA1C-829D99E8EB08} = {B3174199-BEA2-4E87-92DD-3B86AB9DC444}
+		{1EE7DA4A-9295-4E3E-9770-74103D23146E} = {B3174199-BEA2-4E87-92DD-3B86AB9DC444}
+		{2FE55A83-D165-4BD9-BD34-503B0430F366} = {B3174199-BEA2-4E87-92DD-3B86AB9DC444}
+		{921DA2F4-4687-4A0D-B78B-B64E912A970A} = {B3174199-BEA2-4E87-92DD-3B86AB9DC444}
+		{E411565D-4F60-469E-AE04-3DDB5DD959F5} = {B3174199-BEA2-4E87-92DD-3B86AB9DC444}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4256087B-279E-4CCC-950B-C264905BD910}
