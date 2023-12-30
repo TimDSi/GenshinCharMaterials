@@ -1,11 +1,11 @@
 class CharacterMaterials {
-    constructor(name, quality, region, element, type, levelBoss, localSpeciality, enemy, talentMaterial, talentBoss) {
+    constructor(name, quality, region, element, type, ascensionBoss, localSpeciality, enemy, talentMaterial, talentBoss) {
         this.name = name;
         this.quality = quality;
         this.region = region;
         this.element = element;
         this.type = type;
-        this.levelBoss = levelBoss;
+        this.ascensionBoss = ascensionBoss;
         this.localSpeciality = localSpeciality;
         this.enemy = enemy;
         this.talentMaterial = talentMaterial;
@@ -177,30 +177,35 @@ function generateAscensionMaterial(character, ascention) {
             break;
         case 2:
             charMaterials.set("Mora", 40000);
+            charMaterials.set(character.ascensionBoss, 2);
             charMaterials.set(elementMaterials.forms[1], 3);
             charMaterials.set(character.localSpeciality, 10);
             charMaterials.set(enemyMaterials.forms[0], 15);
             break;
         case 3:
             charMaterials.set("Mora", 60000);
+            charMaterials.set(character.ascensionBoss, 4);
             charMaterials.set(elementMaterials.forms[1], 6);
             charMaterials.set(character.localSpeciality, 20);
             charMaterials.set(enemyMaterials.forms[1], 12);
             break;
         case 4:
             charMaterials.set("Mora", 80000);
+            charMaterials.set(character.ascensionBoss, 8);
             charMaterials.set(elementMaterials.forms[2], 3);
             charMaterials.set(character.localSpeciality, 30);
             charMaterials.set(enemyMaterials.forms[1], 18);
             break;
         case 5:
             charMaterials.set("Mora", 100000);
+            charMaterials.set(character.ascensionBoss, 12);
             charMaterials.set(elementMaterials.forms[2], 6);
             charMaterials.set(character.localSpeciality, 45);
             charMaterials.set(enemyMaterials.forms[2], 12);
             break;
         case 6:
             charMaterials.set("Mora", 120000);
+            charMaterials.set(character.ascensionBoss, 20);
             charMaterials.set(elementMaterials.forms[3], 6);
             charMaterials.set(character.localSpeciality, 60);
             charMaterials.set(enemyMaterials.forms[2], 24);
@@ -250,7 +255,6 @@ function generateCharacterLevelUp(character, maxTalentLevel) {
         
         switch (characterLevel) {
             case 19:
-                console.log(characterLevel)
                 characterAscentionMaterials = generateAscensionMaterial(characterMaterial, 1);
                 break;
             case 39:
