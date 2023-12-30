@@ -427,14 +427,66 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LocalSpecialities", "LocalSpecialities", "{1C873AC9-69E8-45FD-B57F-0544EF7C1537}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mondstadt", "Mondstadt", "{9BE84BD1-DA11-49AD-980C-F50D460A2F5E}"
+	ProjectSection(SolutionItems) = preProject
+		CallaLily.png = CallaLily.png
+		Cecilia.png = Cecilia.png
+		DandelionSeed.png = DandelionSeed.png
+		PhilanemoMushroom.png = PhilanemoMushroom.png
+		SmallLampGrass.png = SmallLampGrass.png
+		Valberry.png = Valberry.png
+		WindwheelAster.png = WindwheelAster.png
+		Wolfhook.png = Wolfhook.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Liyue", "Liyue", "{70A6D098-584C-4850-AF61-F7F6A7936907}"
+	ProjectSection(SolutionItems) = preProject
+		CorLapis.png = CorLapis.png
+		GlazeLily.png = GlazeLily.png
+		JueyunChili.png = JueyunChili.png
+		NoctilucousJade.png = NoctilucousJade.png
+		Qingxin.png = Qingxin.png
+		SilkFlower.png = SilkFlower.png
+		Starconch.png = Starconch.png
+		Violetgrass.png = Violetgrass.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inazuma", "Inazuma", "{6D86F0A7-2ABB-49F4-ACF7-A4C1DFB2833B}"
+	ProjectSection(SolutionItems) = preProject
+		AmakumoFruit.png = AmakumoFruit.png
+		CrystalMarrow.png = CrystalMarrow.png
+		Dendrobium.png = Dendrobium.png
+		FluorescentFungus.png = FluorescentFungus.png
+		NakuWeed.png = NakuWeed.png
+		Onikabuto.png = Onikabuto.png
+		SakuraBloom.png = SakuraBloom.png
+		SangoPearl.png = SangoPearl.png
+		SeaGanoderma.png = SeaGanoderma.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sumeru", "Sumeru", "{9C7520EB-E37B-43ED-ADDE-DBC47A7AAD39}"
+	ProjectSection(SolutionItems) = preProject
+		HennaBerry.png = HennaBerry.png
+		KalpalataLotus.png = KalpalataLotus.png
+		MourningFlower.png = MourningFlower.png
+		NilotpalaLotus.png = NilotpalaLotus.png
+		Padisarah.png = Padisarah.png
+		RukkhashavaMushrooms.png = RukkhashavaMushrooms.png
+		SandGreasePupa.png = SandGreasePupa.png
+		Scarab.png = Scarab.png
+		Trishiraite.png = Trishiraite.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fontaine", "Fontaine", "{61F4E7C5-D05D-4AA2-B562-63A775FEC670}"
+	ProjectSection(SolutionItems) = preProject
+		BerylConch.png = BerylConch.png
+		LakelightLily.png = LakelightLily.png
+		LumidouceBell.png = LumidouceBell.png
+		Lumitoile.png = Lumitoile.png
+		RainbowRose.png = RainbowRose.png
+		RomaritimeFlower.png = RomaritimeFlower.png
+		SpringoftheFirstDewdrop.png = SpringoftheFirstDewdrop.png
+		SubdetectionUnit.png = SubdetectionUnit.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
