@@ -491,14 +491,52 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorldBoss", "WorldBoss", "{F5D49C4C-3FB9-44E5-90AD-67ADE6C6B6DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mondstadt", "Mondstadt", "{81771782-309C-4AAC-AE05-458CFF1EB1F7}"
+	ProjectSection(SolutionItems) = preProject
+		CrystallineBloom.png = CrystallineBloom.png
+		HoarfrostCore.png = HoarfrostCore.png
+		HurricaneSeed.png = HurricaneSeed.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Liyue", "Liyue", "{F6CC8761-E5A3-4324-9FF4-25B28B05A927}"
+	ProjectSection(SolutionItems) = preProject
+		BasaltPillar.png = BasaltPillar.png
+		CleansingHeart.png = CleansingHeart.png
+		EverflameSeed.png = EverflameSeed.png
+		JuvenileJade.png = JuvenileJade.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inazuma", "Inazuma", "{CE1E2384-3AB3-4425-A036-2F3E57161A1D}"
+	ProjectSection(SolutionItems) = preProject
+		DewofRepudiation.png = DewofRepudiation.png
+		DragonheirsFalseFin.png = DragonheirsFalseFin.png
+		MarionetteCore.png = MarionetteCore.png
+		PerpetualHeart.png = PerpetualHeart.png
+		RiftbornRegalia.png = RiftbornRegalia.png
+		SmolderingPearl.png = SmolderingPearl.png
+		StormBeads.png = StormBeads.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sumeru", "Sumeru", "{96C89120-7E78-4DA5-A5F3-596E1E141844}"
+	ProjectSection(SolutionItems) = preProject
+		EvergloomRing.png = EvergloomRing.png
+		LightGuidingTetrahedron.png = LightGuidingTetrahedron.png
+		MajesticHookedBeak.png = MajesticHookedBeak.png
+		PerpetualCaliber.png = PerpetualCaliber.png
+		PseudoStamens.png = PseudoStamens.png
+		QuelledCreeper.png = QuelledCreeper.png
+		RunicFang.png = RunicFang.png
+		ThunderclapFruitcore.png = ThunderclapFruitcore.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fontaine", "Fontaine", "{2A070D8B-51A0-41E1-A78A-A7D5E68881BA}"
+	ProjectSection(SolutionItems) = preProject
+		Coppelia.png = Coppelia.png
+		Coppelius.png = Coppelius.png
+		EmperorsResolution.png = EmperorsResolution.png
+		FontemerUnihorn.png = FontemerUnihorn.png
+		TourbillonDevice.png = TourbillonDevice.png
+		WaterThatFailedToTranscend.png = WaterThatFailedToTranscend.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
