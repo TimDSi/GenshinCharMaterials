@@ -535,7 +535,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fontaine", "Fontaine", "{2A
 		EmperorsResolution.png = EmperorsResolution.png
 		FontemerUnihorn.png = FontemerUnihorn.png
 		TourbillonDevice.png = TourbillonDevice.png
-		WaterThatFailedToTranscend.png = WaterThatFailedToTranscend.png
+		HydroTulpa.png = HydroTulpa.png
 	EndProjectSection
 EndProject
 Global
