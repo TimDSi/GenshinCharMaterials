@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Navia",
+    "level": 80,
+    "talents": [ 7, 9, 9 ]
+  },
+  {
+    "name": "Furina",
+    "level": 80,
+    "talents": [ 6, 10, 10 ]
+  },
+  {
+    "name": "Charlotte",
+    "level": 80,
+    "talents": [ 6, 6, 6 ]
+  },
+  {
+    "name": "Freminet",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Lynette",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Kirara",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Kaveh",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Mika",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Yaoyao",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Faruzan",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Layla",
+    "level": 80,
+    "talents": [ 6, 9, 8 ]
+  },
+  {
+    "name": "Nahida",
+    "level": 80,
+    "talents": [ 9, 9, 10 ]
+  },
+  {
+    "name": "Nilou",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Candace",
+    "level": 80,
+    "talents": [ 6, 6, 6 ]
+  },
+  {
+    "name": "Dori",
+    "level": 80,
+    "talents": [ 6, 6, 6 ]
+  },
+  {
+    "name": "Tighnari",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Collei",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Shikanoin Heizou",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Kuki Shinobu",
+    "level": 80,
+    "talents": [ 6, 9, 6 ]
+  },
+  {
+    "name": "Yelan",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Yae Miko",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Shenhe",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Yun Jin",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Gorou",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Thoma",
+    "level": 80,
+    "talents": [ 6, 8, 6 ]
+  },
+  {
+    "name": "Sangonomiya Kokomi",
+    "level": 80,
+    "talents": [ 8, 9, 9 ]
+  },
+  {
+    "name": "Raiden Shogun",
+    "level": 80,
+    "talents": [ 6, 9, 10 ]
+  },
+  {
+    "name": "Kujou Sara",
+    "level": 80,
+    "talents": [ 6, 10, 9 ]
+  },
+  {
+    "name": "Yoimiya",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Sayu",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Kamisato Ayaka",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Kaedehara Kazuha",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Eula",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Yanfei",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Rosaria",
+    "level": 80,
+    "talents": [ 6, 6, 6 ]
+  },
+  {
+    "name": "Hu Tao",
+    "level": 80,
+    "talents": [ 10, 10, 10 ]
+  },
+  {
+    "name": "Ganyu",
+    "level": 80,
+    "talents": [ 10, 9, 9 ]
+  },
+  {
+    "name": "Zhongli",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Xinyan",
+    "level": 80,
+    "talents": [ 6, 6, 6 ]
+  },
+  {
+    "name": "Diona",
+    "level": 80,
+    "talents": [ 6, 6, 6 ]
+  },
+  {
+    "name": "Venti",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Keqing",
+    "level": 90,
+    "talents": [ 10, 10, 10 ]
+  },
+  {
+    "name": "Mona",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Qiqi",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Diluc",
+    "level": 80,
+    "talents": [ 9, 9, 9 ]
+  },
+  {
+    "name": "Jean",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Sucrose",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Chongyun",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Noelle",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Bennett",
+    "level": 80,
+    "talents": [ 10, 10, 10 ]
+  },
+  {
+    "name": "Fischl",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Ningguang",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Xingqiu",
+    "level": 80,
+    "talents": [ 6, 9, 10 ]
+  },
+  {
+    "name": "Beidou",
+    "level": 80,
+    "talents": [ 6, 6, 6 ]
+  },
+  {
+    "name": "Xiangling",
+    "level": 80,
+    "talents": [ 6, 9, 9 ]
+  },
+  {
+    "name": "Razor",
+    "level": 80,
+    "talents": [ 6, 6, 6 ]
+  },
+  {
+    "name": "Barbara",
+    "level": 80,
+    "talents": [ 6, 7, 6 ]
+  },
+  {
+    "name": "Lisa",
+    "level": 80,
+    "talents": [ 6, 6, 6 ]
+  },
+  {
+    "name": "Kaeya",
+    "level": 80,
+    "talents": [ 6, 6, 7 ]
+  },
+  {
+    "name": "Amber",
+    "level": 80,
+    "talents": [ 6, 7, 6 ]
+  }
+]

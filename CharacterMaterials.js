@@ -248,7 +248,7 @@ function generateCharacterLevelUp(character, maxTalentLevel) {
     const characterMaterial = charactersMaterials[getCharacterMaterialIndex(character.name)];
     const charMaterials = new Map();
 
-    let characterLevel = character.level;
+    let characterLevel = 1//character.level;
     while (characterLevel < levelForTalent(maxTalentLevel)) {
         characterLevel++;
         let characterAscentionMaterials = new Map();
