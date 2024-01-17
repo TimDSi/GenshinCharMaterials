@@ -5,6 +5,7 @@
     - talents objectives
 */
 let myCharacter = [
+    new Character("Chevreuse",          70, [1, 1, 1]),
     new Character("Navia",              80, [7, 9, 9]),
     new Character("Furina",             80, [6, 10, 10]),
     new Character("Charlotte",          80, [6, 6, 6]),
