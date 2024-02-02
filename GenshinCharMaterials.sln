@@ -42,6 +42,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "characterImages", "characte
 		Fischl.png = Fischl.png
 		Freminet.png = Freminet.png
 		Furina.png = Furina.png
+		Gaming.png = Gaming.png
 		Ganyu.png = Ganyu.png
 		Gorou.png = Gorou.png
 		HuTao.png = HuTao.png
@@ -84,6 +85,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "characterImages", "characte
 		Wanderer.png = Wanderer.png
 		Wriothesley.png = Wriothesley.png
 		Xiangling.png = Xiangling.png
+		Xianyun.png = Xianyun.png
 		Xiao.png = Xiao.png
 		Xingqiu.png = Xingqiu.png
 		Xinyan.png = Xinyan.png
@@ -440,6 +442,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mondstadt", "Mondstadt", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Liyue", "Liyue", "{70A6D098-584C-4850-AF61-F7F6A7936907}"
 	ProjectSection(SolutionItems) = preProject
+		ClearwaterJade.png = ClearwaterJade.png
 		CorLapis.png = CorLapis.png
 		GlazeLily.png = GlazeLily.png
 		JueyunChili.png = JueyunChili.png
@@ -501,6 +504,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Liyue", "Liyue", "{F6CC8761
 	ProjectSection(SolutionItems) = preProject
 		BasaltPillar.png = BasaltPillar.png
 		CleansingHeart.png = CleansingHeart.png
+		CloudseamScale.png = CloudseamScale.png
 		EverflameSeed.png = EverflameSeed.png
 		JuvenileJade.png = JuvenileJade.png
 	EndProjectSection
@@ -534,8 +538,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fontaine", "Fontaine", "{2A
 		Coppelius.png = Coppelius.png
 		EmperorsResolution.png = EmperorsResolution.png
 		FontemerUnihorn.png = FontemerUnihorn.png
-		TourbillonDevice.png = TourbillonDevice.png
 		HydroTulpa.png = HydroTulpa.png
+		TourbillonDevice.png = TourbillonDevice.png
 	EndProjectSection
 EndProject
 Global
