@@ -18,12 +18,7 @@ function generateRessourceQuantity(ressource, quantity) {
     return ressourceContainer;
 }
 
-
-function generateRequiredMaterials(character) {
-    let materialsRequired = document.createElement("ul");
-    materialsRequired.setAttribute("class", "materialsRequired");
-    let materialIndex = getCharacterMaterialIndex(character.name);
-
+function genereateCharacterRequirements(character) {
     const requirements = new Map();
 
     // talents
@@ -62,6 +57,16 @@ function generateRequiredMaterials(character) {
         }
     }
 
+    return requirements;
+}
+
+function generateRequiredMaterials(character) {
+    let materialsRequired = document.createElement("ul");
+    materialsRequired.setAttribute("class", "materialsRequired");
+    let materialIndex = getCharacterMaterialIndex(character.name);
+
+    const requirements = genereateCharacterRequirements(character);
+
     //sort requirements
     let materialsIndexes = []
     for (const [key, value] of requirements.entries()) {
@@ -71,7 +76,7 @@ function generateRequiredMaterials(character) {
                 materialsIndexes.push(index);
             }
         }
-    }    
+    }
 
     // add rows
     for (let j = 0; j < materialsIndexes.length; j++) {
@@ -209,6 +214,74 @@ function generateCharacter(character) {
     return div;
 }
 
+function generateAllMaterials(sortedCharacters) {
+    let materialsList = document.getElementById("AllRessources");
+
+    // clear
+    while (materialsList.firstChild) {
+        materialsList.removeChild(materialsList.lastChild);
+    }
+
+
+    let allMaterials = new Map();
+
+    for (let index in sortedCharacters) {
+
+        // initialize name
+        let characterName = sortedCharacters[index];
+
+        // get character data from owner
+        let ownIndex = getMyCharacterIndex(characterName);
+
+        // get character data from owner
+        let character;
+        if (ownIndex != -1) {
+            character = myCharacter[ownIndex];
+        } else {
+            if (document.getElementById("ownedFilter").checked) {
+                character = new Character(characterName, 90, [10, 10, 10]);
+            } else {
+                character = new Character(characterName, 1, [1, 1, 1]);
+            }
+        }
+
+        // Character Materials
+        const thisCharacterMaterials = genereateCharacterRequirements(character);
+        for (const [key, value] of thisCharacterMaterials.entries()) {
+            if (allMaterials.has(key)) {
+                allMaterials.set(key, value + allMaterials.get(key));
+            } else {
+                allMaterials.set(key, value);
+            }
+        }
+    }
+
+    //sort requirements
+    let materialsIndexes = [];
+    for (const [key, value] of materials.entries()) {
+        materialsIndexes.push(key);
+    }
+
+    for (const [key, value] of allMaterials.entries()) {
+        if (value > 0) {
+            const index = getMaterialCategory(key);
+            if (!(materialsIndexes.indexOf(index) >= 0)) {
+                materialsIndexes.push(index);
+            }
+        }
+    }
+
+    // add rows
+    for (let j = 0; j < materialsIndexes.length; j++) {
+        for (const [key, value] of allMaterials.entries()) {
+            if (materialsIndexes[j] == getMaterialCategory(key)) {
+                materialsList.appendChild(generateRessourceQuantity(key, value));
+            }
+        }
+    }
+
+}
+
 function createBox() {
     let box = document.getElementById("Box");
 
@@ -237,6 +310,9 @@ function createBox() {
 
         box.appendChild(generateCharacter(character));
     }
+
+    //generate all Materials
+    generateAllMaterials(sortedCharacters);
 }
 
 function main() {

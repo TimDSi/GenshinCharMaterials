@@ -116,3 +116,42 @@ h1 {
 #Box > .character > .materialsRequired > .material > img {
     height: 100%;
 }
+
+
+/*
+    All Ressources
+*/
+
+#RessourceControler {
+    height: 50px;
+    width: 100%;
+}
+
+    #RessourceControler:checked + #AllRessources {
+        height: fit-content;
+        transition-duration: 0.5s;
+    }
+
+#AllRessources {
+    position: relative;
+    width: 100%;
+    height: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #AAAAAA;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+#AllRessources > .material {
+    width: 10%;
+    height: 3em;
+    display: flex;
+}
+
+#AllRessources > .material > img {
+    height: 100%;
+}
