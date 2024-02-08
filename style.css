@@ -127,26 +127,32 @@ h1 {
     width: 100%;
 }
 
-    #RessourceControler:checked + #AllRessources {
-        height: fit-content;
-        transition-duration: 0.5s;
-    }
+#RessourceControler:checked + #AllRessources {
+    height: fit-content;
+    transition-duration: 0.5s;
+}
 
 #AllRessources {
     position: relative;
     width: 100%;
     height: 0;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+#AllRessources > ul {
+    position: relative;
+    width: 100%;
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     background-color: #AAAAAA;
-    overflow: hidden;
-    transition-duration: 0.5s;
 }
 
-#AllRessources > .material {
+#AllRessources > ul > .material {
     width: 10%;
     height: 3em;
     display: flex;

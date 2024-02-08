@@ -222,6 +222,11 @@ function generateAllMaterials(sortedCharacters) {
         materialsList.removeChild(materialsList.lastChild);
     }
 
+    //generate mob Materials
+    let mob = document.createElement("ul");
+    let talents = document.createElement("ul");
+    let rocks = document.createElement("ul");
+    let other = document.createElement("ul");
 
     let allMaterials = new Map();
 
@@ -245,6 +250,9 @@ function generateAllMaterials(sortedCharacters) {
             }
         }
 
+        //force new char
+        character = new Character(characterName, 1, [1, 1, 1]);
+
         // Character Materials
         const thisCharacterMaterials = genereateCharacterRequirements(character);
         for (const [key, value] of thisCharacterMaterials.entries()) {
@@ -258,10 +266,11 @@ function generateAllMaterials(sortedCharacters) {
 
     //sort requirements
     let materialsIndexes = [];
-    for (const [key, value] of materials.entries()) {
-        materialsIndexes.push(key);
+    for (let i = 0; i < materials.length; i++) {
+        materialsIndexes.push(i);
     }
 
+    // add all unknown Materials
     for (const [key, value] of allMaterials.entries()) {
         if (value > 0) {
             const index = getMaterialCategory(key);
@@ -275,11 +284,27 @@ function generateAllMaterials(sortedCharacters) {
     for (let j = 0; j < materialsIndexes.length; j++) {
         for (const [key, value] of allMaterials.entries()) {
             if (materialsIndexes[j] == getMaterialCategory(key)) {
-                materialsList.appendChild(generateRessourceQuantity(key, value));
+                if (materialsIndexes[j] > materialsIndexes.length - 9) {
+                    rocks.appendChild(generateRessourceQuantity(key, value));
+                } else if (materialsIndexes[j] > materialsIndexes.length - 24) {
+                    talents.appendChild(generateRessourceQuantity(key, value));
+                } else if (materialsIndexes[j] > 1) {
+                    mob.appendChild(generateRessourceQuantity(key, value));
+                } else {
+                    other.appendChild(generateRessourceQuantity(key, value));
+                }
             }
         }
     }
 
+    // add all list
+    materialsList.appendChild(mob);
+    materialsList.appendChild(document.createElement("br"));
+    materialsList.appendChild(talents);
+    materialsList.appendChild(document.createElement("br"));
+    materialsList.appendChild(rocks);
+    materialsList.appendChild(document.createElement("br"));
+    materialsList.appendChild(other);
 }
 
 function createBox() {
