@@ -80,7 +80,7 @@ let charactersMaterials = [
     new CharacterMaterials("Diluc",             5,  "Mondstadt",    "pyro",     "DPS",      "Everflame Seed",           "Small Lamp Grass",     "Fatui",                "Resistance",   "Dvalin's Plume"),
     new CharacterMaterials("Jean",              5,  "Mondstadt",    "anemo",    "Support",  "Hurricane Seed",           "Dandelion Seed",       "Hilichurls",           "Resistance",   "Dvalin's Plume"),
     new CharacterMaterials("Sucrose",           4,  "Mondstadt",    "anemo",    "Support",  "Hurricane Seed",           "Windwheel Aster",      "Whopperflowers",       "Freedom",      "Spirit Locket of Boreas"),
-    new CharacterMaterials("Chongyun",          4,  "Mondstadt",    "cryo",     "Support",  "Hoarfrost Core",           "Cor Lapis",            "Hilichurls",           "Diligence",    "Dvalin's Sigh"),
+    new CharacterMaterials("Chongyun",          4,  "Liyue",        "cryo",     "Support",  "Hoarfrost Core",           "Cor Lapis",            "Hilichurls",           "Diligence",    "Dvalin's Sigh"),
     new CharacterMaterials("Noelle",            4,  "Mondstadt",    "geo",      "DPS",      "Basalt Pillar",            "Valberry",             "Hilichurls",           "Resistance",   "Dvalin's Claw"),
     new CharacterMaterials("Bennett",           4,  "Mondstadt",    "pyro",     "Support",  "Everflame Seed",           "Windwheel Aster",      "Treasure Hoarders",    "Resistance",   "Dvalin's Plume"),
     new CharacterMaterials("Fischl",            4,  "Mondstadt",    "electro",  "Support",  "Lightning Prism",          "Small Lamp Grass",     "Hilichurl Shooters",   "Ballad",       "Spirit Locket of Boreas"),

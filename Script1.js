@@ -93,6 +93,32 @@ function generateRequiredMaterials(character) {
 }
 
 
+function generateCharacterConstellations(type, value) {
+    // presentation
+    let constellationContainer = document.createElement("div");
+    constellationContainer.setAttribute("class", "constellations");
+
+    // Constellations
+    for (let i = 0; i < 6; i++) {
+        let constellation = document.createElement("div");
+        constellation.setAttribute("class", "characterConstellation");
+        constellationContainer.appendChild(constellation);
+        let b = -1;
+        let x = -25 + 100 * Math.cos((2*i + b) * Math.PI / 24);
+        let y = 35 + 100 * Math.sin((i + b) * Math.PI / 24);
+        constellation.style.left = x + "%";
+        constellation.style.top = y + "%";
+
+        if (i + 1 <= value) {
+            constellation.style.background = `radial-gradient(circle, ${type}, #666666)`;
+        } else {
+            constellation.style.background = `radial-gradient(circle, #FFFFFF , #666666)`;
+        }
+    }
+
+    return constellationContainer;
+}
+
 function generateCharacterPresentation(characterName) {
     // presentation
     let presentation = document.createElement("div");
@@ -194,8 +220,14 @@ function generateCharacter(character) {
             color = "#FFFFFF";
             break;
     }
-    if (getMyCharacterIndex(character.name) == -1) {
+
+    // check if char is own
+    let ownIndex = getMyCharacterIndex(character.name);
+    let constellations = 0;
+    if (ownIndex == -1) {
         color = "#444444";
+    } else {
+        constellations = myCharacter[ownIndex].constellations;
     }
     //div.style.backgroundColor = color;
     div.style.background = `linear-gradient(to bottom, ${color}, #FFFFFF)`;
@@ -203,8 +235,10 @@ function generateCharacter(character) {
     // presentation
     div.appendChild(generateCharacterPresentation(character.name));
 
-    // stats
+    // contellations
+    div.appendChild(generateCharacterConstellations(color, constellations));
 
+    // stats
     div.appendChild(generateCharacterStats(character));
 
     // materials required
