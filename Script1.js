@@ -363,6 +363,7 @@ function generateAllMaterials(sortedCharacters) {
     materialsList.appendChild(document.createElement("br"));
 
     materialsList.appendChild(other);
+    materialsList.appendChild(document.createElement("br"));
 }
 
 function createBox() {
