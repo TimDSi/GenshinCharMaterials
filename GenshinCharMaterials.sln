@@ -498,6 +498,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mondstadt", "Mondstadt", "{
 		CrystallineBloom.png = CrystallineBloom.png
 		HoarfrostCore.png = HoarfrostCore.png
 		HurricaneSeed.png = HurricaneSeed.png
+		LightningPrism.png = LightningPrism.png
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Liyue", "Liyue", "{F6CC8761-E5A3-4324-9FF4-25B28B05A927}"

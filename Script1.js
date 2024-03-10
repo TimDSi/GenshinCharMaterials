@@ -261,6 +261,8 @@ function generateAllMaterials(sortedCharacters) {
     let talents = document.createElement("ul");
     let rocks = document.createElement("ul");
     let other = document.createElement("ul");
+    let worldBosses = document.createElement("ul");
+    let weeklyBoss = document.createElement("ul");
 
     let allMaterials = new Map();
 
@@ -278,9 +280,9 @@ function generateAllMaterials(sortedCharacters) {
             character = myCharacter[ownIndex];
         } else {
             if (document.getElementById("ownedFilter").checked) {
-                character = new Character(characterName, 90, [10, 10, 10]);
+                character = new Character(characterName, 90, [10, 10, 10], 6);
             } else {
-                character = new Character(characterName, 1, [1, 1, 1]);
+                character = new Character(characterName, 1, [1, 1, 1], 0);
             }
         }
 
@@ -318,12 +320,22 @@ function generateAllMaterials(sortedCharacters) {
     for (let j = 0; j < materialsIndexes.length; j++) {
         for (const [key, value] of allMaterials.entries()) {
             if (materialsIndexes[j] == getMaterialCategory(key)) {
-                if (materialsIndexes[j] > materialsIndexes.length - 9) {
+                    // weekly bosses
+                if (materialsIndexes[j] > getMaterialIndex("Weekly Bosses") - 1) {
+                    weeklyBoss.appendChild(generateRessourceQuantity(key, value));
+                    // world bosses
+                } else if (materialsIndexes[j] > getMaterialIndex("World Bosses") - 1) {
+                    worldBosses.appendChild(generateRessourceQuantity(key, value));
+                    // rocks
+                } else if (materialsIndexes[j] > getMaterialIndex("pyro") - 1) {
                     rocks.appendChild(generateRessourceQuantity(key, value));
-                } else if (materialsIndexes[j] > materialsIndexes.length - 24) {
+                    // world bosses
+                } else if (materialsIndexes[j] > getMaterialIndex("Equity") - 1) {
                     talents.appendChild(generateRessourceQuantity(key, value));
+                    // world bosses
                 } else if (materialsIndexes[j] > 1) {
                     mob.appendChild(generateRessourceQuantity(key, value));
+                    // other
                 } else {
                     other.appendChild(generateRessourceQuantity(key, value));
                 }
@@ -334,10 +346,19 @@ function generateAllMaterials(sortedCharacters) {
     // add all list
     materialsList.appendChild(mob);
     materialsList.appendChild(document.createElement("br"));
+
     materialsList.appendChild(talents);
     materialsList.appendChild(document.createElement("br"));
+
+    materialsList.appendChild(weeklyBoss);
+    materialsList.appendChild(document.createElement("br"));
+
     materialsList.appendChild(rocks);
     materialsList.appendChild(document.createElement("br"));
+
+    materialsList.appendChild(worldBosses);
+    materialsList.appendChild(document.createElement("br"));
+
     materialsList.appendChild(other);
 }
 

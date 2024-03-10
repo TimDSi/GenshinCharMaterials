@@ -56,6 +56,25 @@ let materials = [
     new Material("dendro", ["Nagadus Emerald Sliver", "Nagadus Emerald Fragment", "Nagadus Emerald Chunk", "Nagadus Emerald Gemstone"]),
     new Material("cryo", ["Shivada Jade Sliver", "Shivada Jade Fragment", "Shivada Jade Chunk", "Shivada Jade Gemstone"]),
     new Material("geo", ["Prithiva Topaz Sliver", "Prithiva Topaz Fragment", "Prithiva Topaz Chunk", "Prithiva Topaz Gemstone"]),
+    // WorldBoss
+    new Material("World Bosses", [
+        "Hydro Tulpa", "Tourbillon Device", "Fontemer Unihorn", "Emperor's Resolution", "Coppelius", "Coppelia",
+        "Dew of Repudiation", "Dragonheir's False Fin", "Marionette Core", "Perpetual Heart", "Riftborn Regalia", "Smoldering Pearl", "Storm Beads",
+        "Juvenile Jade", "Everflame Seed", "Cloudseam Scale", "Cleansing Heart", "Basalt Pillar",
+        "Crystalline Bloom", "Hoarfrost Core", "Hurricane Seed", "Lightning Prism",
+        "Evergloom Ring", "Light Guiding Tetrahedron", "Majestic Hooked Beak", "Perpetual Caliber", "Pseudo-Stamens", "Quelled Creeper", "Runic Fang", "Thunderclap Fruitcore"
+    ]),
+    new Material("Weekly Bosses", [
+        "Lightless Mass", "Lightless Eye of the Maelstrom", "Lightless Silk String",
+        "Ring of Boreas", "Spirit Locket of Boreas", "Tail of Boreas",
+        "Bloodjade Branch", "Dragon Lord's Crown", "Gilded Scale",
+        "Shadow of the Warrior", "Shard of a Foul Legacy", "Tusk of Monoceros Caeli",
+        "Dvalin's Claw", "Dvalin's Plume", "Dvalin's Sigh",
+        "Everamber", "Primordial Greenbloom", "Worldspan Fern",
+        "Ashen Heart", "Hellfire Butterfly", "Molten Moment",
+        "Mudra of the Malefic General", "Tears of the Calamitous God", "The Meaning of Aeons",
+        "Daka's Bell", "Mirror of Mushin", "Puppet Strings"
+    ]),
 ];
 
 function getMaterialIndex(material) {
