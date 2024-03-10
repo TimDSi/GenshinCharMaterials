@@ -32,8 +32,8 @@ let myCharacter = [
     new Character("Shenhe",             80, [6, 9, 9]),
     new Character("Yun Jin",            80, [6, 9, 9]),
     new Character("Gorou",              80, [6, 9, 9]),
-    new Character("Thoma",              80, [6, 8, 6]),
-    new Character("Sangonomiya Kokomi", 80, [8, 9, 9]),
+    new Character("Thoma",              80, [6, 9, 9]),
+    new Character("Sangonomiya Kokomi", 80, [9, 9, 9]),
     new Character("Raiden Shogun",      80, [6, 9, 10]),
     new Character("Kujou Sara",         80, [6, 10, 9]),
     new Character("Yoimiya",            80, [9, 9, 9]),
@@ -42,12 +42,12 @@ let myCharacter = [
     new Character("Kaedehara Kazuha",   80, [6, 9, 9]),
     new Character("Eula",               80, [9, 9, 9]),
     new Character("Yanfei",             80, [9, 9, 9]),
-    new Character("Rosaria",            80, [6, 6, 6]),
+    new Character("Rosaria",            80, [6, 6, 8]),
     new Character("Hu Tao",             80, [10, 10, 10]),
     new Character("Ganyu",              80, [10, 9, 9]),
     new Character("Zhongli",            80, [6, 9, 9]),
     new Character("Xinyan",             80, [6, 6, 6]),
-    new Character("Diona",              80, [6, 6, 6]),
+    new Character("Diona",              80, [6, 8, 6]),
     new Character("Venti",              80, [9, 9, 9]),
     new Character("Keqing",             90, [10, 10, 10]),
     new Character("Mona",               80, [6, 9, 9]),
@@ -66,8 +66,8 @@ let myCharacter = [
     new Character("Razor",              80, [6, 6, 6]),
     new Character("Barbara",            80, [6, 7, 6]),
     new Character("Lisa",               80, [6, 6, 6]),
-    new Character("Kaeya",              80, [6, 6, 7]),
-    new Character("Amber",              80, [6, 7, 6])
+    new Character("Kaeya",              80, [6, 6, 8]),
+    new Character("Amber",              80, [6, 9, 9])
 ];
 
 function getMyCharacterIndex(name) {
