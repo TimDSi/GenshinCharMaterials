@@ -256,14 +256,6 @@ function generateAllMaterials(sortedCharacters) {
         materialsList.removeChild(materialsList.lastChild);
     }
 
-    //generate mob Materials
-    let mob = document.createElement("ul");
-    let talents = document.createElement("ul");
-    let rocks = document.createElement("ul");
-    let other = document.createElement("ul");
-    let worldBosses = document.createElement("ul");
-    let weeklyBoss = document.createElement("ul");
-
     let allMaterials = new Map();
 
     for (let index in sortedCharacters) {
@@ -315,6 +307,17 @@ function generateAllMaterials(sortedCharacters) {
             }
         }
     }
+
+
+    // HTML Side
+
+    //generate mob Materials
+    let mob = document.createElement("ul");
+    let talents = document.createElement("ul");
+    let rocks = document.createElement("ul");
+    let other = document.createElement("ul");
+    let worldBosses = document.createElement("ul");
+    let weeklyBoss = document.createElement("ul");
 
     // add rows
     for (let j = 0; j < materialsIndexes.length; j++) {
