@@ -287,7 +287,7 @@ function generateAllMaterials(sortedCharacters) {
         }
 
         //force new char
-        character = new Character(characterName, 1, [1, 1, 1]);
+        //character = new Character(characterName, 1, [1, 1, 1]);
 
         // Character Materials
         const thisCharacterMaterials = genereateCharacterRequirements(character);
