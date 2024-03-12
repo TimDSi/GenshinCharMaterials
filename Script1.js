@@ -131,7 +131,7 @@ function generateCharacterPresentation(characterName) {
 
     // image
     let image = document.createElement("img");
-    image.src = "./" + characterName.replace(/\s/g, '') + ".png";
+    image.src = "./Characters/" + charactersMaterials[getCharacterMaterialIndex(characterName)].region + "/" + characterName.replace(/\s/g, '') + ".png";
     let imageClass = "characterImage";
     if (getMyCharacterIndex(characterName) == -1) {
         imageClass += " notOwned";
