@@ -15,8 +15,8 @@ class CharacterMaterials {
 }
 
 let charactersMaterials = [
-    new CharacterMaterials("Arlecchino",        5,  "Fontaine",     "pyro",     "DPS",      "unknown",                  "Starconch",            "Fatui",                "Order",        "unknown"),
-    new CharacterMaterials("Chiori",            5,  "Inazuma",      "geo",      "Support",  "Coppelia",                 "Starconch",            "Specter",              "Light",        "Lightless Silk String"),
+    new CharacterMaterials("Arlecchino",        5,  "Fontaine",     "pyro",     "DPS",      "unknown_boss",             "Rainbow Rose",         "Fatui",                "Order",        "unknown_weekly_boss"),
+    new CharacterMaterials("Chiori",            5,  "Inazuma",      "geo",      "Support",  "Coppelia",                 "Dendrobium",           "Specter",              "Light",        "Lightless Silk String"),
     new CharacterMaterials("Gaming",            4,  "Liyue",        "pyro",     "Support",  "Emperor's Resolution",     "Starconch",            "Slimes",               "Prosperity",   "Lightless Mass"),
     new CharacterMaterials("Xianyun",           5,  "Liyue",        "anemo",    "Support",  "Cloudseam Scale",          "Clearwater Jade",      "Samachurls",           "Gold",         "Lightless Eye of the Maelstrom"),
     new CharacterMaterials("Chevreuse",         4,  "Fontaine",     "pyro",     "Support",  "Fontemer Unihorn",         "Lumidouce Bell",       "Clockwork Meka",       "Order",        "Lightless Eye of the Maelstrom"),
