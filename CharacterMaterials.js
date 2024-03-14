@@ -15,11 +15,11 @@ class CharacterMaterials {
 }
 
 let charactersMaterials = [
-    new CharacterMaterials("Arlecchino",        5,  "Fontaine",     "pyro",     "DPS",      "Emperor's Resolution",    "Starconch",             "Slimes",               "Order",        "Lightless Mass"),
-    new CharacterMaterials("Chiori",            5,  "Inazuma",      "geo",      "Support",  "Emperor's Resolution",    "Starconch",             "Slimes",               "Prosperity",   "Lightless Mass"),
-    new CharacterMaterials("Gaming",            4,  "Liyue",        "pyro",     "Support",  "Emperor's Resolution",    "Starconch",             "Slimes",               "Prosperity",   "Lightless Mass"),
-    new CharacterMaterials("Xianyun",           5,  "Liyue",        "anemo",    "Support",  "Cloudseam Scale",         "Clearwater Jade",       "Samachurls",           "Gold",         "Lightless Eye of the Maelstrom"),
-    new CharacterMaterials("Chevreuse",         4,  "Fontaine",     "pyro",     "Support",  "Fontemer Unihorn",        "Lumidouce Bell",        "Clockwork Meka",       "Order",        "Lightless Eye of the Maelstrom"),
+    new CharacterMaterials("Arlecchino",        5,  "Fontaine",     "pyro",     "DPS",      "unknown",                  "Starconch",            "Fatui",                "Order",        "unknown"),
+    new CharacterMaterials("Chiori",            5,  "Inazuma",      "geo",      "Support",  "Coppelia",                 "Starconch",            "Specter",              "Light",        "Lightless Silk String"),
+    new CharacterMaterials("Gaming",            4,  "Liyue",        "pyro",     "Support",  "Emperor's Resolution",     "Starconch",            "Slimes",               "Prosperity",   "Lightless Mass"),
+    new CharacterMaterials("Xianyun",           5,  "Liyue",        "anemo",    "Support",  "Cloudseam Scale",          "Clearwater Jade",      "Samachurls",           "Gold",         "Lightless Eye of the Maelstrom"),
+    new CharacterMaterials("Chevreuse",         4,  "Fontaine",     "pyro",     "Support",  "Fontemer Unihorn",         "Lumidouce Bell",       "Clockwork Meka",       "Order",        "Lightless Eye of the Maelstrom"),
     new CharacterMaterials("Navia",             5,  "Fontaine",     "geo",      "DPS",      "Coppelius",        "Spring of the First Dewdrop",  "Fontemer Aberrants",   "Equity",       "Lightless Silk String"),
     new CharacterMaterials("Furina",            5,  "Fontaine",     "hydro",    "Support",  "Hydro Tulpa",              "Lakelight Lily",       "Whopperflowers",       "Justice",      "Lightless Mass"),
     new CharacterMaterials("Charlotte",         4,  "Fontaine",     "cryo",     "Support",  "Tourbillon Device",        "Beryl Conch",          "Clockwork Meka",       "Justice",      "Lightless Silk String"),
