@@ -49,6 +49,7 @@ function genereateCharacterRequirements(character) {
 
     // ascension
     const thisCharacterAscensionMaterials = generateCharacterLevelUp(character, maxTargetValue);
+    console.log(thisCharacterAscensionMaterials)
     for (const [key, value] of thisCharacterAscensionMaterials.entries()) {
         if (requirements.has(key)) {
             requirements.set(key, value + requirements.get(key));
