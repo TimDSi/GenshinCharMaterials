@@ -7,7 +7,7 @@ function generateRessourceQuantity(ressource, quantity) {
     // img
     let ressourceImage = document.createElement("img");
     ressourceImage.src = "./" + ressource.replace(/[\s'-]/g, '') + ".png";
-    ressourceImage.alt = ressource;
+    ressourceImage.alt = "??";
     ressourceContainer.appendChild(ressourceImage);
 
     // value

@@ -47,7 +47,7 @@ let myCharacter = [
     new Character("Ganyu",              80, [10, 9, 9], 0), 
     new Character("Zhongli",            80, [6, 9, 9],  0), 
     new Character("Xinyan",             80, [6, 6, 6],  6), 
-    new Character("Diona",              80, [6, 8, 6],  6), 
+    new Character("Diona",              80, [6, 9, 6],  6), 
     new Character("Venti",              80, [9, 9, 9],  0), 
     new Character("Keqing",             90, [10, 10, 10],3), 
     new Character("Mona",               80, [6, 9, 9],  1), 
@@ -63,10 +63,10 @@ let myCharacter = [
     new Character("Xingqiu",            80, [6, 9, 10], 6), 
     new Character("Beidou",             80, [6, 6, 6],  6), 
     new Character("Xiangling",          80, [6, 9, 9],  6), 
-    new Character("Razor",              80, [8, 9, 6],  3), 
+    new Character("Razor",              80, [9, 9, 7],  3), 
     new Character("Barbara",            80, [6, 7, 6],  6), 
     new Character("Lisa",               80, [6, 6, 6],  6), 
-    new Character("Kaeya",              80, [6, 6, 8],  4), 
+    new Character("Kaeya",              80, [6, 6, 9],  4), 
     new Character("Amber",              80, [6, 9, 9],  6) 
 ];
 

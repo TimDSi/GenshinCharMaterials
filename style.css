@@ -131,6 +131,7 @@ h1 {
 
 #Box > .character > .materialsRequired > .material > img {
     height: 100%;
+    max-width: 100%;
 }
 
 
