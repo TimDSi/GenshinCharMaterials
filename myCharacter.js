@@ -6,7 +6,7 @@
 */
 let myCharacter = [
     new Character("Gaming",             80, [9, 9, 9],  5), 
-    new Character("Xianyun",            80, [6, 6, 9],  0), 
+    new Character("Xianyun",            80, [6, 8, 9],  0), 
     new Character("Chevreuse",          80, [6, 6, 6],  0), 
     new Character("Navia",              80, [8, 9, 9],  0), 
     new Character("Furina",             80, [6, 10, 10],2), 
