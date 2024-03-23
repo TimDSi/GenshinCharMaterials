@@ -100,7 +100,7 @@ h1 {
 */
 
 #Box > .character > .characterStats {
-    margin: 5%;
+    margin: 0%;
     width: 30%;
     height: fit-content;
     text-align: center;
