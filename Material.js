@@ -58,13 +58,14 @@ let materials = [
     new Material("geo", ["Prithiva Topaz Sliver", "Prithiva Topaz Fragment", "Prithiva Topaz Chunk", "Prithiva Topaz Gemstone"]),
     // WorldBoss
     new Material("World Bosses", ["unknown_boss", 
-        "Hydro Tulpa", "Tourbillon Device", "Fontemer Unihorn", "Emperor's Resolution", "Coppelius", "Coppelia",
+        "Hydro Tulpa", "Tourbillon Device", "Fontemer Unihorn", "Emperor's Resolution", "Coppelius", "Coppelia", "Fragment of a Golden Melody",
         "Dew of Repudiation", "Dragonheir's False Fin", "Marionette Core", "Perpetual Heart", "Riftborn Regalia", "Smoldering Pearl", "Storm Beads",
         "Juvenile Jade", "Everflame Seed", "Cloudseam Scale", "Cleansing Heart", "Basalt Pillar",
         "Crystalline Bloom", "Hoarfrost Core", "Hurricane Seed", "Lightning Prism",
         "Evergloom Ring", "Light Guiding Tetrahedron", "Majestic Hooked Beak", "Perpetual Caliber", "Pseudo-Stamens", "Quelled Creeper", "Runic Fang", "Thunderclap Fruitcore"
     ]),
     new Material("Weekly Bosses", ["unknown_weekly_boss", 
+        "Fading Candle", "Silken Feather", "Denial and Judgment", 
         "Lightless Mass", "Lightless Eye of the Maelstrom", "Lightless Silk String",
         "Ring of Boreas", "Spirit Locket of Boreas", "Tail of Boreas",
         "Bloodjade Branch", "Dragon Lord's Crown", "Gilded Scale",
