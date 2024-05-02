@@ -87,7 +87,7 @@ let charactersMaterials = [
     new CharacterMaterials("Fischl",            4,  "Mondstadt",    "electro",  "Support",  "Lightning Prism",          "Small Lamp Grass",     "Hilichurl Shooters",   "Ballad",       "Spirit Locket of Boreas"),
     new CharacterMaterials("Ningguang",         4,  "Liyue",        "geo",      "Support",  "Basalt Pillar",            "Glaze Lily",           "Fatui",                "Prosperity",   "Spirit Locket of Boreas"),
     new CharacterMaterials("Xingqiu",           4,  "Liyue",        "hydro",    "Support",  "Cleansing Heart",          "Silk Flower",          "Hilichurls",           "Gold",         "Tail of Boreas"),
-    new CharacterMaterials("Beidou",            4,  "Liyue",        "electro",  "DPS",      "Lightning Prism",          "Noctilucous Jade",     "Treasure Hoarders",    "Gold",         "Dvalin's Sigh"),
+    new CharacterMaterials("Beidou",            4,  "Liyue",        "electro",  "Support",      "Lightning Prism",          "Noctilucous Jade",     "Treasure Hoarders",    "Gold",         "Dvalin's Sigh"),
     new CharacterMaterials("Xiangling",         4,  "Liyue",        "pyro",     "Support",  "Everflame Seed",           "Jueyun Chili",         "Slimes",               "Diligence",    "Dvalin's Claw"),
     new CharacterMaterials("Razor",             4,  "Mondstadt",    "electro",  "DPS",      "Lightning Prism",          "Wolfhook",             "Hilichurls",           "Resistance",   "Dvalin's Claw"),
     new CharacterMaterials("Barbara",           4,  "Mondstadt",    "hydro",    "Support",  "Cleansing Heart",          "Philanemo Mushroom",   "Samachurls",           "Freedom",      "Ring of Boreas"),
