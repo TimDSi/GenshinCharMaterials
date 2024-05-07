@@ -5,7 +5,7 @@
     - talents objectives
 */
 let myCharacter = [
-    new Character("Arlecchino",         90, [9, 6, 6],  1), 
+    new Character("Arlecchino",         90, [10, 6, 6], 1), 
     new Character("Gaming",             80, [9, 9, 9],  5), 
     new Character("Xianyun",            80, [6, 9, 9],  0), 
     new Character("Chevreuse",          80, [6, 9, 9],  0), 
@@ -43,7 +43,7 @@ let myCharacter = [
     new Character("Kaedehara Kazuha",   80, [6, 9, 9],  2), 
     new Character("Eula",               80, [9, 9, 9],  0), 
     new Character("Yanfei",             80, [9, 9, 9],  6), 
-    new Character("Rosaria",            80, [6, 7, 9],  6), 
+    new Character("Rosaria",            80, [6, 9, 9],  6), 
     new Character("Hu Tao",             80, [10, 10, 10],1), 
     new Character("Ganyu",              80, [10, 9, 9], 0), 
     new Character("Zhongli",            81, [6, 9, 9],  0), 
@@ -64,7 +64,7 @@ let myCharacter = [
     new Character("Xingqiu",            81, [6, 9, 10], 6), 
     new Character("Beidou",             80, [6, 8, 9],  6), 
     new Character("Xiangling",          80, [6, 9, 9],  6), 
-    new Character("Razor",              80, [9, 9, 7],  4), 
+    new Character("Razor",              80, [9, 9, 9],  4), 
     new Character("Barbara",            80, [6, 7, 6],  6), 
     new Character("Lisa",               80, [6, 6, 6],  6), 
     new Character("Kaeya",              80, [6, 6, 9],  4), 
