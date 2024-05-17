@@ -18,6 +18,44 @@ function generateRessourceQuantity(ressource, quantity) {
     return ressourceContainer;
 }
 
+const totalRessourcesSpent = new Map();
+
+function calculateTotalSpent(character) {
+    // talents
+    let maxTalent = 0;
+    for (let j = 0; j < 3; j++) {
+        let talentLevel = 0;
+        const currentTalentLevel = character.talents[j];
+
+        if (currentTalentLevel > maxTalent) {
+            maxTalent = currentTalentLevel;
+        }
+
+        while (talentLevel < currentTalentLevel) {
+            talentLevel++;
+            const thisTalentMaterials = generateMaterialsForTalentLevel(character.name, talentLevel);
+            for (const [key, value] of thisTalentMaterials.entries()) {
+                if (totalRessourcesSpent.has(key)) {
+                    totalRessourcesSpent.set(key, value + totalRessourcesSpent.get(key));
+                } else {
+                    totalRessourcesSpent.set(key, value);
+                }
+            }
+        }
+    }
+
+    // ascension
+    const thisCharacterAscensionMaterials = generateCharacterLevelUp(character, maxTalent, true);
+    //console.log(thisCharacterAscensionMaterials)
+    for (const [key, value] of thisCharacterAscensionMaterials.entries()) {
+        if (totalRessourcesSpent.has(key)) {
+            totalRessourcesSpent.set(key, value + totalRessourcesSpent.get(key));
+        } else {
+            totalRessourcesSpent.set(key, value);
+        }
+    }
+}
+
 function genereateCharacterRequirements(character) {
     const requirements = new Map();
 
@@ -49,7 +87,7 @@ function genereateCharacterRequirements(character) {
 
     // ascension
     const thisCharacterAscensionMaterials = generateCharacterLevelUp(character, maxTargetValue);
-    console.log(thisCharacterAscensionMaterials)
+    //console.log(thisCharacterAscensionMaterials)
     for (const [key, value] of thisCharacterAscensionMaterials.entries()) {
         if (requirements.has(key)) {
             requirements.set(key, value + requirements.get(key));
@@ -284,6 +322,7 @@ function generateAllMaterials(sortedCharacters) {
 
         // Character Materials
         const thisCharacterMaterials = genereateCharacterRequirements(character);
+        calculateTotalSpent(character);
         for (const [key, value] of thisCharacterMaterials.entries()) {
             if (allMaterials.has(key)) {
                 allMaterials.set(key, value + allMaterials.get(key));
@@ -365,6 +404,8 @@ function generateAllMaterials(sortedCharacters) {
 
     materialsList.appendChild(other);
     materialsList.appendChild(document.createElement("br"));
+
+    console.log(totalRessourcesSpent);
 }
 
 function createBox() {
