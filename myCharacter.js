@@ -5,13 +5,13 @@
     - talents objectives
 */
 let myCharacter = [
-    new Character("Arlecchino",         90, [10, 6, 6], 1), 
+    new Character("Arlecchino",         90, [10, 7, 6], 1), 
     new Character("Gaming",             80, [9, 9, 9],  5), 
     new Character("Xianyun",            80, [6, 9, 9],  0), 
     new Character("Chevreuse",          80, [6, 9, 9],  0), 
     new Character("Navia",              80, [9, 9, 9],  0), 
     new Character("Furina",             80, [6, 10, 10],2), 
-    new Character("Charlotte",          80, [6, 6, 6],  6), 
+    new Character("Charlotte",          80, [6, 9, 9],  6), 
     new Character("Freminet",           80, [9, 9, 9],  5), 
     new Character("Lynette",            80, [6, 9, 9],  6), 
     new Character("Kirara",             80, [6, 9, 9],  1), 
@@ -23,16 +23,16 @@ let myCharacter = [
     new Character("Nahida",             80, [9, 9, 10], 1), 
     new Character("Nilou",              80, [9, 9, 9],  0), 
     new Character("Candace",            80, [6, 9, 9],  4), 
-    new Character("Dori",               80, [6, 7, 9],  5), 
+    new Character("Dori",               80, [6, 9, 9],  5), 
     new Character("Tighnari",           80, [9, 9, 9],  1), 
     new Character("Collei",             80, [6, 9, 9],  6), 
     new Character("Shikanoin Heizou",   80, [9, 9, 9],  6), 
-    new Character("Kuki Shinobu",       80, [6, 9, 6],  6), 
+    new Character("Kuki Shinobu",       80, [6, 9, 9],  6), 
     new Character("Yelan",              81, [6, 9, 9],  1), 
     new Character("Yae Miko",           80, [9, 9, 9],  0), 
     new Character("Shenhe",             80, [6, 9, 9],  0), 
     new Character("Yun Jin",            80, [6, 9, 9],  4), 
-    new Character("Gorou",              80, [6, 9, 9],  1), 
+    new Character("Gorou",              80, [6, 9, 9],  2), 
     new Character("Thoma",              80, [6, 9, 9],  6), 
     new Character("Sangonomiya Kokomi", 80, [9, 9, 9],  0), 
     new Character("Raiden Shogun",      80, [6, 9, 10], 2), 
@@ -67,7 +67,7 @@ let myCharacter = [
     new Character("Razor",              80, [9, 9, 9],  4), 
     new Character("Barbara",            80, [6, 7, 6],  6), 
     new Character("Lisa",               80, [6, 6, 6],  6), 
-    new Character("Kaeya",              80, [6, 6, 9],  4), 
+    new Character("Kaeya",              80, [6, 9, 9],  4), 
     new Character("Amber",              80, [6, 9, 9],  6) 
 ];
 
