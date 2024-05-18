@@ -62,7 +62,7 @@ let myCharacter = [
     new Character("Fischl",             80, [6, 9, 9],  6), 
     new Character("Ningguang",          80, [6, 9, 9],  6), 
     new Character("Xingqiu",            81, [6, 9, 10], 6), 
-    new Character("Beidou",             80, [6, 8, 9],  6), 
+    new Character("Beidou",             80, [6, 9, 9],  6), 
     new Character("Xiangling",          80, [6, 9, 9],  6), 
     new Character("Razor",              80, [9, 9, 9],  4), 
     new Character("Barbara",            80, [6, 7, 6],  6), 
