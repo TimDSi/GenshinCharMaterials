@@ -65,7 +65,7 @@ let myCharacter = [
     new Character("Beidou",             80, [6, 9, 9],  6), 
     new Character("Xiangling",          80, [6, 9, 9],  6), 
     new Character("Razor",              80, [9, 9, 9],  4), 
-    new Character("Barbara",            80, [6, 7, 6],  6), 
+    new Character("Barbara",            80, [6, 9, 6],  6), 
     new Character("Lisa",               80, [6, 6, 6],  6), 
     new Character("Kaeya",              80, [6, 9, 9],  4), 
     new Character("Amber",              80, [6, 9, 9],  6) 
