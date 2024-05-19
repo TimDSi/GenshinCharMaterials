@@ -63,9 +63,21 @@ function genereateCharacterRequirements(character) {
     let maxTargetValue = 0;
     for (let j = 0; j < 3; j++) {
         let currentTalentLevel = character.talents[j];
-        let targetValue = 9;
-        if (j == 0 && charactersMaterials[materialIndex].type != "DPS") {
-            targetValue = 6;
+        let targetValue;
+        switch (charactersMaterials[getCharacterMaterialIndex(character.name)].type) {
+            case "DPS":
+                targetValue = 9;
+                break;
+            case "Support":
+                if (j == 0) {
+                    targetValue = 6;
+                } else {
+                    targetValue = 9;
+                }
+                break;
+            default:
+                targetValue = 1;
+                break;
         }
 
         if (targetValue > maxTargetValue) {
@@ -102,7 +114,6 @@ function genereateCharacterRequirements(character) {
 function generateRequiredMaterials(character) {
     let materialsRequired = document.createElement("ul");
     materialsRequired.setAttribute("class", "materialsRequired");
-    let materialIndex = getCharacterMaterialIndex(character.name);
 
     const requirements = genereateCharacterRequirements(character);
 
@@ -322,7 +333,7 @@ function generateAllMaterials(sortedCharacters) {
 
         // Character Materials
         const thisCharacterMaterials = genereateCharacterRequirements(character);
-        calculateTotalSpent(character);
+        //console.log(character.name, thisCharacterMaterials)
         for (const [key, value] of thisCharacterMaterials.entries()) {
             if (allMaterials.has(key)) {
                 allMaterials.set(key, value + allMaterials.get(key));
@@ -330,7 +341,9 @@ function generateAllMaterials(sortedCharacters) {
                 allMaterials.set(key, value);
             }
         }
+        calculateTotalSpent(character);
     }
+    //console.log("All : ", allMaterials)
 
     //sort requirements
     let materialsIndexes = [];
@@ -405,7 +418,7 @@ function generateAllMaterials(sortedCharacters) {
     materialsList.appendChild(other);
     materialsList.appendChild(document.createElement("br"));
 
-    console.log(totalRessourcesSpent);
+    console.log("Spent : ", totalRessourcesSpent);
 }
 
 function createBox() {
