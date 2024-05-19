@@ -18,7 +18,7 @@ function generateRessourceQuantity(ressource, quantity) {
     return ressourceContainer;
 }
 
-const totalRessourcesSpent;
+let totalRessourcesSpent;
 
 function calculateTotalSpent(character) {
     // talents
