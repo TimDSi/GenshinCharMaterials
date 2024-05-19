@@ -18,7 +18,7 @@ function generateRessourceQuantity(ressource, quantity) {
     return ressourceContainer;
 }
 
-const totalRessourcesSpent = new Map();
+const totalRessourcesSpent;
 
 function calculateTotalSpent(character) {
     // talents
@@ -306,6 +306,7 @@ function generateAllMaterials(sortedCharacters) {
         materialsList.removeChild(materialsList.lastChild);
     }
 
+    totalRessourcesSpent = new Map();
     let allMaterials = new Map();
 
     for (let index in sortedCharacters) {
