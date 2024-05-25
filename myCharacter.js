@@ -54,7 +54,7 @@ let myCharacter = [
     new Character("Mona",               80, [6, 9, 9],  1), 
     new Character("Qiqi",               80, [6, 9, 9],  1), 
     new Character("Diluc",              89, [9, 9, 9],  2), 
-    new Character("Jean",               80, [6, 9, 9],  3), 
+    new Character("Jean",               80, [6, 9, 9],  4), 
     new Character("Sucrose",            80, [6, 9, 9],  6), 
     new Character("Chongyun",           84, [6, 9, 9],  2), 
     new Character("Noelle",             80, [6, 9, 9],  6), 
@@ -67,7 +67,7 @@ let myCharacter = [
     new Character("Razor",              80, [9, 9, 9],  4), 
     new Character("Barbara",            80, [6, 9, 9],  6), 
     new Character("Lisa",               80, [6, 9, 9],  6), 
-    new Character("Kaeya",              80, [6, 9, 9],  4), 
+    new Character("Kaeya",              80, [6, 9, 9],  5), 
     new Character("Amber",              80, [6, 9, 9],  6) 
 ];
 
