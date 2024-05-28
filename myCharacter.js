@@ -57,7 +57,7 @@ let myCharacter = [
     new Character("Jean",               80, [6, 9, 9],  4), 
     new Character("Sucrose",            80, [6, 9, 9],  6), 
     new Character("Chongyun",           84, [6, 9, 9],  2), 
-    new Character("Noelle",             80, [6, 9, 9],  6), 
+    new Character("Noelle",             80, [9, 9, 9],  6), 
     new Character("Bennett",            80, [10, 10, 10],6), 
     new Character("Fischl",             80, [6, 9, 9],  6), 
     new Character("Ningguang",          80, [6, 9, 9],  6), 
@@ -68,7 +68,7 @@ let myCharacter = [
     new Character("Barbara",            80, [6, 9, 9],  6), 
     new Character("Lisa",               80, [6, 9, 9],  6), 
     new Character("Kaeya",              80, [6, 9, 9],  5), 
-    new Character("Amber",              80, [6, 9, 9],  6) 
+    new Character("Amber",              80, [9, 9, 9],  6) 
 ];
 
 function getMyCharacterIndex(name) {
